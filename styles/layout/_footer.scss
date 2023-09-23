@@ -1,0 +1,45 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/colors" as c;
+
+.footer {
+  margin: 200px 0 50px;
+  text-align: center;
+  @include m.flex-config(center, center, false, column);
+
+  &__nav {
+    max-width: 417px;
+    width: 100%;
+    @include m.flex-config(space-between, center, false, false);
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+    a {
+      &.active {
+        color: c.color(cb-green);
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__social {
+    max-width: 172px;
+    width: 100%;
+    @include m.flex-config(space-between, center, false, false);
+    margin-bottom: 50px;
+  }
+
+  &__note {
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+
+  &__award {
+    color: #008080;
+    font-weight: bold;
+  }
+
+  &__copyright {
+    font-weight: 500;
+    color: c.color(black);
+  }
+}

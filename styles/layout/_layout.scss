@@ -1,0 +1,101 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../components/buttons';
+
+
+.main {
+  margin-top: 140px;
+  min-height: 28vh;
+}
+
+.external-link {
+  @include m.font(18px, 600, 120%);
+  color: c.color(cb-green);
+  text-decoration: underline;
+}
+
+%large {
+  width: 215px;
+  font-size: 14px;
+}
+
+%medium {
+  width: 170px;
+}
+
+.cta {
+  &-block {
+    @include m.flex-config(false, center, false, false);
+
+    @include m.respond(phone-wide) {
+      justify-content: space-between;
+    }
+
+    @include m.respond(phone-smallest) {
+      flex-direction: column;
+    }
+
+    a {
+      
+      @include m.respond(phone) {
+        width: 48% !important;
+      }
+
+      @include m.respond(phone-smallest) {
+        width: 170px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      @include m.respond(phone-smallest) {
+        &:first-of-type,&:nth-of-type(2) {
+          // display: inline-block;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &-playstore {
+    padding: 7.5px 10px;
+    height: 56px;
+    background-color: c.color(cb-black-100);
+    @include m.radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: c.color(white);
+    font-weight: 600;
+    line-height: 110%;
+    margin-right: 15px;
+
+    &-lg {
+      @extend .cta-playstore;
+      @extend %large;
+    }
+
+    &-md {
+      @extend .cta-playstore;
+      @extend %medium;
+    }
+
+    .text {
+      margin-left: 15px;
+      display: inline-block;
+    }
+
+    .store {
+      font-size: 12px;
+    }
+  }
+
+  &-webapp {
+    &-primary {
+      @extend .btn-primary-lg;
+    }
+
+    &-white {
+      @extend .btn-white-lg;
+    }
+  }
+}

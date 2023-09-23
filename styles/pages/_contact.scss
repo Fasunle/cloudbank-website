@@ -1,0 +1,192 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../components/buttons';
+@use '../base/typography';
+
+
+.contact {
+  &__top {
+    @include m.flex-config(space-between, flex-start, false, false);
+    margin-bottom: 200px;
+
+    @include m.respond(tablet-small) {
+      display: block;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__content {
+    max-width: 467px;
+    width: 100%;
+    margin-right: 20px;
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+    }
+  }
+
+  &__heading {
+    @include m.font(40px, bold, 1.5);
+    margin-bottom: 18px;
+
+    @include m.respond(tablet-8) {
+      font-size: 30px;
+    }
+
+    @include m.respond(tablet-small) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    max-width: 377px;
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 28px;
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__subtext {
+    line-height: 1.5;
+
+    &-link {
+      color: c.color(cb-green);
+      text-decoration: underline;
+    }
+  }
+
+  &__form {
+    max-width: 510px;
+    width: 100%;
+    padding: 52px 59.5px;
+    @include m.radius;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+
+    @include m.respond(tablet-8) {
+      padding: 30px;
+    }
+
+    @include m.respond(tablet-small) {
+      margin-top: 35px;
+      max-width: 100%;
+    }
+
+    &-field {
+      margin-bottom: 30px;
+    }
+
+    &-label {
+      line-height: 150%;
+      display: block;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    &-input,
+    &-textarea {
+      display: block;
+      padding: 10px 22px;
+      @include m.radius;
+      background-color: c.color(white);
+      border: 1px solid #c1c1c1;
+      outline: 0;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        color: #686868;
+      }
+    }
+
+    &-input {
+      @include m.distinctSize(100%, 48px);
+    }
+
+    &-textarea {
+      @include m.distinctSize(100%, 192px);
+      resize: none;
+    }
+
+    &-btn {
+      margin: 80px auto 0;
+      @extend .btn-primary-lg;
+
+      @include m.respond(tablet-8) {
+        margin-top: 33px;
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    justify-content: space-between;
+
+    @include m.respond(tablet-8) {
+      display: block;
+    }
+
+    &-content {
+      max-width: 416px;
+      width: 100%;
+      margin-right: 20px;
+
+      @include m.respond(tablet-8) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 80px;
+      }
+    }
+
+    &-heading {
+      @extend .heading-4;
+      margin-bottom: 30px;
+
+      @include m.respond(tablet-small) {
+        font-size: 20px;
+      }
+    }
+
+    &-field {
+      margin-bottom: 50px;
+
+      &-name {
+        @include m.font(16px, 600, 1.5);
+        margin-bottom: 10px;
+      }
+
+      &-link {
+        @include m.font(16px, normal, 1.5);
+        color: c.color(cb-green);
+        text-decoration: underline;
+      }
+
+      &-value {
+        font-weight: 500;
+      }
+    }
+
+    &-map {
+      @include m.radius;
+      max-width: 622px;
+      @include m.distinctSize(100%, 490px);
+
+      @include m.respond(tablet-8) {
+        max-width: 100%;
+        margin-right: 0;
+      }
+
+      @include m.respond(tablet-small) {
+        height: 412px;
+      }
+    }
+
+    &-frame {
+      @include m.equalSize(100%);
+    }
+  }
+}

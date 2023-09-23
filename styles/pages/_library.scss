@@ -1,0 +1,122 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../components/buttons';
+@use '../base/typography';
+
+.forex {
+  margin-top: 30px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: bannermove;
+    animation-duration: 90s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    &:hover {
+      animation-play-state: paused;
+      cursor: default;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-right: 98px;
+    }
+  }
+
+  &__rate {
+    @include m.font(16px, 500, 1.5);
+    color: c.color(black);
+  }
+
+  &__flag {
+    @include m.equalSize(22px);
+    margin-right: 8px;
+  }
+}
+
+.brochures {
+  margin-top: 80px;
+}
+
+.brochure {
+  display: grid;
+  margin-bottom: 71px;
+
+  &.to-left {
+    grid-template-columns: 346px 1fr;
+    background-color: c.color(cb-red-300);
+
+    @include m.respond(tablet-small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.respond(phone-wide) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &.to-right {
+    grid-template-columns: 1fr 346px;
+    background-color: c.color(cb-purple-100);
+
+    @include m.respond(tablet-small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.respond(phone-wide) {
+      display: flex;
+      flex-direction: column-reverse;
+
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    max-width: 563px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__heading {
+    @extend .heading-4;
+    margin-bottom: 15px;
+
+    @include m.respond(tablet-small) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    @include m.font(16px, 500, 1.5);
+    color: c.color(cb-black);
+    margin-bottom: 36px;
+  }
+}
+
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
+}

@@ -1,0 +1,127 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../components/buttons';
+@use '../base/typography';
+
+
+.services {
+  &__hero {
+    margin-top: 30px;
+    @include m.radius;
+    text-align: center;
+    padding: 98px 61px;
+    height: 450px;
+    background-image: url('/images/man-in-suit.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(15, 15, 15, 0.5);
+    background-blend-mode: multiply;
+    color: c.color(white);
+
+    @include m.respond(tablet-8) {
+      padding: 70px 20px;
+      height: 400px;
+    }
+
+    @include m.respond(tablet-small) {
+      height: auto;
+    }
+
+    &-text {
+      @include m.font(18px, 500, 1.5);
+      margin-bottom: 59px;
+    }
+
+    &-cta {
+      @extend .btn-primary-lg;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__heading {
+    @extend .heading-1;
+    margin-bottom: 10px;
+
+    @include m.respond(tablet-8) {
+      font-size: 40px;
+    }
+
+    @include m.respond(phablet-max) {
+      font-size: 30px;
+    }
+  }
+
+  &__main {
+    margin-top: 150px;
+
+    &-heading {
+      text-align: center;
+      @extend .heading-4;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__feature {
+    @include m.flex-config(space-between, center, false, false);
+
+    @include m.respond(tablet-small) {
+      flex-direction: column;
+    }
+
+    &-section {
+      width: 727px;
+
+      @include m.respond(tablet-small) {
+        margin-top: 40px;
+        width: 100%;
+      }
+    }
+
+    &-intro {
+      margin-right: 50px;
+      margin-bottom: 25px;
+    }
+
+    ul,
+    &-list {
+      margin-bottom: 39px;
+      list-style: none;
+      font-family: "Inter", sans-serif;
+      @include m.font(16px, normal, 190.02%);
+
+      @include m.respond(phablet-max) {
+        margin-bottom: 70px;
+      }
+    }
+
+    ul li,
+    &-item {
+      position: relative;
+      margin-left: 27px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -27px;
+        @include m.equalSize(15px);
+        background-color: c.color(cb-brown-100);
+
+      }
+    }
+
+    ul li {
+      a {
+        @include m.font(18px, 600, 120%);
+        color: c.color(cb-green);
+        text-decoration: underline;
+      }
+    }
+  }
+}

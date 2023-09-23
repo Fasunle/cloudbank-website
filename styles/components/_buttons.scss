@@ -1,0 +1,51 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+
+%large {
+  width: 215px;
+}
+
+%medium {
+  width: 170px;
+}
+
+.btn {
+  @include m.flex-config(center, center, false, false);
+  @include m.radius;
+  padding: 16px 10px;
+  font-weight: 600;
+  text-align: center;
+  height: 56px;
+
+  &-primary {
+    @extend .btn;
+    background-color: c.color(cb-green);
+    color: c.color(white);
+
+    &-lg {
+      @extend .btn-primary;
+      @extend %large;
+    }
+
+    &-md {
+      @extend .btn-primary;
+      @extend %medium;
+    }
+  }
+
+  &-white {
+    @extend .btn;
+    background-color: c.color(white);
+    color: c.color(cb-green);
+
+    &-lg {
+      @extend .btn-white;
+      @extend %large;
+    }
+
+    &-md {
+      @extend .btn-white;
+      @extend %medium;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "./base";
+
+/*******Layout*******/
+@use "./layout/navbar";
+@use "./layout/layout";
+@use "./layout/footer";
+@use "./layout/compare";
+
+/*******Pages*******/
+
+// Home
+@use "./pages/home";
+
+// Services
+@use "./pages/services";
+
+// Library
+@use "./pages/library";
+
+// FAQ
+@use "./pages/faq";
+
+// Contact
+@use "./pages/contact";
+
+// About
+@use "./pages/about";
+
+//Pos
+@use "./pages/pos";

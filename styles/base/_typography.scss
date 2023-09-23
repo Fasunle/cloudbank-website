@@ -1,0 +1,69 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+
+$base-font-size: 1rem;
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: 1.2;
+  color: c.color(cb-black);
+}
+
+
+%regular {
+  font-weight: 400;
+}
+
+%semibold {
+  font-weight: 500;
+}
+
+%bold {
+  font-weight: 700;
+}
+
+
+
+// Heading Typography
+.heading {
+
+  // Heading 1
+  &-1 {
+    font-size: $base-font-size * 2.5;
+    @extend %bold;
+  }
+
+  // Heading 2
+  &-2 {
+    font-size: $base-font-size * 2.5;
+    line-height: 1.5;
+    @extend %bold;
+  }
+
+  // Heading 3
+  &-3 {
+    font-size: $base-font-size * 1.875;
+    line-height: 1.5;
+  }
+
+  // Heading 4
+  &-4 {
+    font-size: $base-font-size * 1.875;
+    @extend %bold;
+  }
+
+}
+
+
+// Paragraphy Typography
+.paragraph {
+  &-1 {
+    font-size: $base-font-size * 1.125;
+    @extend %semibold;
+  }
+}
+
+
+

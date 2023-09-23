@@ -1,0 +1,821 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../components/buttons';
+@use '../base/typography';
+
+// Hero Section
+.hero {
+  @include m.flex-config(space-between, center, false, false);
+
+  @include m.respond(tablet-small) {
+    display: block;
+  }
+
+  &__content {
+    width: 496px;
+
+    @include m.respond(desktop) {
+      width: 50%;
+    }
+
+    @include m.respond(tablet-8) {
+      max-width: 340px;
+      width: 100%;
+      margin-right: 20px;
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    @include m.respond(desktop) {
+      width: 48%;
+    }
+
+    @include m.respond(tablet-8) {
+      width: unset;
+    }
+  }
+
+  &__title {
+    @extend .heading-1;
+    line-height: 1.2;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    @include m.respond(tablet-8) {
+      margin-right: 0;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    @extend .paragraph-1;
+    margin-right: 60px;
+    margin-bottom: 40px;
+
+    @include m.respond(desktop) {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// One Platform Section
+.one-platform {
+  position: relative;
+  margin: 107px auto 0;
+  width: 100%;
+  @include m.radius(100%);
+  border: 1px solid rgba(254, 163, 170, 0.4);
+  padding: 156px 96px 50px 136px;
+
+  @include m.respond(desktop) {
+    padding: 100px 50px;
+    @include m.flex-config(center, center, false, column);
+  }
+
+  @include m.respond(tablet-8) {
+    padding: 30px;
+  }
+
+  &__overall {
+    @include m.respond(phablet-max) {
+      width: 491px;
+      height: 507px;
+      transform: scale(0.8);
+    }
+
+    @include m.respond(phone-wide) {
+      transform: scale(0.65);
+    }
+
+    @include m.respond(phone) {
+      transform: scale(0.55);
+    }
+
+    @include m.respond(phone-small) {
+      transform: scale(0.45);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 89%;
+    right: 18.8%;
+    @include m.equalSize(20px);
+    @include m.radius(100%);
+    background-color: #ccccff;
+  }
+
+   &__heading {
+    text-align: center;
+    @extend .heading-4;
+    margin-bottom: 73px;
+
+    @include m.respond(tablet-8) {
+      width: 484px;
+      margin: 20px auto 49px;
+    }
+
+    @include m.respond(tablet) {
+      width: 200px;
+      font-size: 18px;
+      line-height: 1.2;
+      margin: 0 auto 30px;
+      padding: 0 20px;
+    }
+
+   }
+
+   &__body {
+     display: flex;
+     justify-content: center;
+   }
+
+   &__main {
+     display: flex;
+   }
+
+   &__left,
+   &__right {
+     margin-top: 20px;
+   }
+
+   &__left {
+     margin-right: 30px;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+
+     @include m.respond(desktop) {
+        margin-right: 0;
+      }
+
+      @include m.respond(tablet-8) {
+        width: 33.3333%;
+        display: block;
+      }
+
+      
+   }
+
+   &__right {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include m.respond(desktop) {
+      margin-left: 0;
+    }
+
+    @include m.respond(tablet-8) {
+      width: 33.3333%;
+      display: block;
+    }
+  }
+
+   &__feature {
+     &.left {
+       width: 210px;
+
+       @include m.respond(desktop) {
+          width: 230px;
+        }
+
+        @include m.respond(tablet-8) {
+          width: 212px;
+        }
+
+        @include m.respond(tablet-8) {
+          width: unset;
+        }
+     }
+
+     &.right {
+       width: 274px;
+       @include m.respond(desktop) {
+          width: 230px;
+        }
+
+        @include m.respond(tablet-8) {
+          width: 212px;
+        }
+
+        @include m.respond(tablet-8) {
+          width: unset;
+        }
+
+        
+     }
+
+     &.bottom {
+       margin-bottom: 80px;
+
+       @include m.respond(tablet-8) {
+          margin-top: 70px;
+          margin-bottom: 0;
+        }
+
+        @include m.respond(tablet-small) {
+          margin-top: 130px;
+        }
+     }
+
+     &-icon {
+      @include m.equalSize(50px);
+      @include m.radius;
+      background-color: c.color(cb-green-200);
+      @include m.flex-config(center, center, false, false);
+
+      &-img {
+        @include m.equalSize(24px);
+
+        @include m.respond(tablet) {
+          @include m.equalSize(18px);
+        }
+
+        @include m.respond(tablet-small) {
+          @include m.equalSize(12px);
+        }
+      }
+
+      @include m.respond(tablet) {
+        @include m.equalSize(35px);
+      }
+
+      @include m.respond(tablet-small) {
+        @include m.equalSize(30px);
+      }
+
+      &.left {
+        margin-left: auto;
+      }
+
+       &-wrapper {
+         width: 177px;
+         margin-bottom: 15px;
+
+         @include m.respond(desktop) {
+            width: unset
+          }
+       }
+     }
+
+     &-heading {
+       @include m.font(24px, 600, 120%);
+       margin-bottom: 15px;
+
+       @include m.respond(tablet-8) {
+          margin-bottom: 0;
+        }
+
+        @include m.respond(tablet) {
+          font-size: 18px;
+        }
+
+        @include m.respond(tablet-small) {
+          font-size: 12px;
+        }
+
+        
+
+       &.left {
+        @include m.respond(desktop) {
+          text-align: right;
+        }
+       }
+     }
+
+     &-text {
+      @include m.respond(tablet) {
+        font-size: 14px;
+      }
+
+      @include m.respond(tablet-small) {
+        font-size: 10px;
+      }
+      &.left {
+        @include m.respond(desktop) {
+          text-align: right;
+        }
+       }
+     }
+   }
+}
+
+
+// Mobile Banking Section
+.mobile-banking { 
+  margin-top: 100px;
+  @include m.flex-config(space-between, center, false, false);
+
+  @include m.respond(tablet-small) {
+    display: block;
+  }
+
+  
+
+  &__content {
+    max-width: 395px;
+    width: 100%;
+    margin-right: 30px;
+
+    @include m.respond(tablet-8) {
+      max-width: unset;
+      width: 45%;
+      margin-right: 0;
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__visual {
+    @include m.respond(tablet-8) {
+      width: 52%;
+    }
+
+    @include m.respond(tablet-small) {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    @extend .heading-4;
+    margin-bottom: 30px;
+
+    @include m.respond(phone-wide) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}
+
+
+// Keeping Money Safe is our priority
+.priority {
+  margin-top: 200px;
+  @include m.flex-config(space-between, center, false, false);
+
+  @include m.respond(tablet-8) {
+    margin-top: 150px;
+  }
+
+  @include m.respond(tablet-small) {
+    flex-direction: column-reverse;
+  }
+
+  &__visual {
+    max-width: 509px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include m.respond(tablet-8) {
+      max-width: unset;
+      width: 53%;
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__card {
+    position: absolute;
+    @include m.distinctSize(225px, 80px);
+    background-color: c.color(white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 13px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000;
+    z-index: 10;
+
+    &-img {
+      @include m.equalSize(24px);
+
+      @include m.respond(tablet-8) {
+        @include m.equalSize(16.59px);
+        display: inline-block;
+        margin-right: 16px;
+      }
+    }
+
+    @include m.respond(tablet-8) {
+      @include m.distinctSize(155.5px, 56.67px);
+      padding: 5px;
+    }
+
+    span {
+      width: 150px;
+
+      @include m.respond(tablet-8) {
+        width: unset;
+        font-size: 10px;
+      }
+      
+    }
+
+    &.first {
+      top: 242px;
+      left: 0;
+
+      @include m.respond(tablet-8) {
+        top: 257px;
+      }
+    }
+
+    &.second {
+      top: 184px;
+      right: 0;
+    }
+
+    &-vector {
+      display: inline-block;
+    }
+  }
+
+  &__content {
+    max-width: 407px;
+    width: 100%;
+    margin-left: 30px;
+
+    @include m.respond(tablet-8) {
+      max-width: unset;
+      width: 45%;
+      margin-left: 0;
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__heading {
+    @extend .heading-4;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}
+
+// Investments and Loans Available
+.investment {
+  margin-top: 200px;
+  @include m.flex-config(space-between, center, false, false);
+
+  @include m.respond(tablet-small) {
+    display: block;
+  }
+
+  @include m.respond(tablet-8) {
+    margin-top: 125px;
+  }
+
+  &__content {
+    max-width: 407px;
+    width: 100%;
+    margin-right: 30px;
+
+    @include m.respond(tablet-8) {
+      max-width: unset;
+      width: 45%;
+      margin-right: 0;
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__visual {
+    @include m.respond(tablet-8) {
+      width: 51%;
+      margin-left: 0;
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    @extend .heading-4;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    max-width: 530px;
+    @include m.distinctSize(100%, 233.83px);
+    @include m.radius(10px);
+    padding: 56px 28px 60px;
+    @include m.flex-config(space-between, center, false, false);
+
+    @include m.respond(tablet-medium) {
+      max-width: 400px;
+      @include m.distinctSize(100%, 150px);
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @include m.respond(desktop) {
+      padding: 20px;
+    }
+
+    &.red {
+      background-color: c.color(cb-red-100);
+      margin-bottom: 28.34px;
+
+      @include m.respond(tablet-medium) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &.green {
+      background-color: c.color(cb-green-100);
+    }
+
+    &-content {
+      max-width: 333px;
+      width: 100%;
+
+      @include m.respond(desktop-small) {
+        max-width: 280px;
+      }
+    }
+
+    &-title {
+      color: c.color(cb-black-100);
+      margin-bottom: 18.42px;
+      @include m.font(20px, 500, 1.5);
+
+      @include m.respond(tablet-medium) {
+        font-size: 16px;
+      }
+    }
+
+    &-text {
+      color: c.color(cb-black-200);
+      @include m.font(14px, normal, 1.5);
+      @include m.respond(tablet-medium) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+// Users' Testimonies
+.testimonies {
+  margin-top: 200px;
+  text-align: center;
+
+  @include m.respond(tablet-8) {
+    margin-top: 150px;
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+    @extend .heading-4;
+
+    @include m.respond(phone-wide) {
+      text-align: left;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 41px;
+  }
+
+  &__contents {
+    position: relative;
+    max-width: 464px;
+    @include m.distinctSize(100%, 216px);
+    @include m.radius;
+
+    @include m.respond(tablet-small) {
+      height: 230px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    opacity: 0;
+    // visibility: hidden;
+    transition: all .5s;
+    left: 0;
+    top: 0;
+    @include m.equalSize(100%);
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
+
+    @include m.respond(tablet-small) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &.current {
+      opacity: 1;
+      // visibility: visible;
+    }
+  }
+
+  &__main {
+    background-color: c.color(white);
+    color: c.color(black);
+    padding: 35px 35px 10px;
+    text-align: left;
+    height: 146px;
+  }
+
+  &__profile {
+    height: 70px;
+    margin-top: auto;
+    background-color: c.color(cb-red-400);
+    padding: 10px 28px;
+    display: flex;
+    align-items: center;
+
+    &-image {
+      @include m.equalSize(50px);
+      @include m.radius(100%);
+      margin-right: 18px;
+      overflow: hidden;
+    }
+
+    &-name {
+      @include m.font(14px, 500, 120%);
+      color: c.color(black);
+    }
+  }
+
+  &__steps {
+    @include m.flex-config(center, center, false, false);
+  }
+
+
+  &__step {
+    @include m.equalSize(10px);
+    @include m.radius(100%);
+    background-color: rgba(7, 6, 13, 0.25);
+    outline: 0;
+    border: none;
+
+    &.current {
+      background-color:  #489494;
+    }
+
+    &-wrapper {
+      width: 50px;
+      @include m.flex-config(space-between, center, false, false);
+    }
+  }
+
+}
+
+
+// Partners
+.partners {
+  margin-top: 200px;
+
+  @include m.respond(tablet-8) {
+    margin-top: 150px;
+  }
+
+  &__heading {
+    text-align: center;
+    @extend .heading-4;
+    margin-bottom: 50px;
+  }
+
+  &__image {
+    &:not(:last-of-type) {
+      margin-right: 40px;
+
+      @include m.respond(tablet-small) {
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__wrapper {
+    @include m.flex-config(space-between, center, false, false);
+
+    @include m.respond(tablet-small) {
+      flex-direction: column;
+    }
+  }
+}
+
+// Financial Freedom
+.financial-freedom {
+  margin-top: 200px;
+  background-color: c.color(cb-green);
+  @include m.radius;
+  @include m.flex-config(space-between, center, false, false);
+
+  &.dashboard-desktop {
+    padding: 16px 20px 16px 46px;
+
+    @include m.respond(desktop) {
+      padding: 16px 20px;
+    }
+  
+    @include m.respond(tablet-small) {
+      padding: 25px 20px;
+    }
+  }
+
+  &.dashboard-mobile {
+    padding: 16px 120px;
+
+    @include m.respond(desktop) {
+      padding: 16px 90px;
+    }
+
+    @include m.respond(tablet-8) {
+      padding: 25px 55px;
+    }
+  
+    @include m.respond(tablet-small) {
+      padding: 40px 20px;
+    }
+  }
+
+  @include m.respond(tablet-small) {
+    flex-direction: column-reverse;
+  }
+
+  &__content {
+    max-width: 482px;
+    width: 100%;
+    margin-right: 30px;
+
+    @include m.respond(desktop-small) {
+      max-width: 360px;
+    }
+
+    @include m.respond(tablet-small) {
+      max-width: 100%;
+      width: 100%;
+      margin-top: 55px;
+      margin-right: 0;
+    }
+  }
+
+  &__heading {
+    @extend .heading-4;
+    color: c.color(white);
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include m.font(18px, 700, 120%);
+    color: c.color(white);
+    margin-bottom: 40px;
+  }
+
+  &__playstore {
+    @include m.respond(desktop-small) {
+      width: 170px;
+    }
+  }
+}

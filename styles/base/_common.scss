@@ -1,0 +1,17 @@
+@use '../abstracts/mixins' as m;
+
+.container-custom {
+  box-sizing: border-box;
+  max-width: 1260px;
+  margin: 0 auto;
+
+  @include m.respond("desktop-mini") {
+    padding-right: 2rem;
+    padding-left: 2rem; 
+  }
+
+  @include m.respond("tablet") {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}

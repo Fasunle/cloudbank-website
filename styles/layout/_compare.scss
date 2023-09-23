@@ -1,0 +1,73 @@
+@use "../abstracts/colors" as c;
+
+.compare-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.us-container,
+.others-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 30px 40px rgb(64 25 109 / 7%);
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+
+  h3 {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+  }
+}
+
+.us-container {
+  background-color: rgba(c.color(cb-green), 0.1);
+
+  h3 {
+    color: c.color(cb-green);
+  }
+}
+
+.compare-items {
+  text-align: left;
+  padding: 0.7rem;
+  font-weight: bold;
+}
+
+.compare-check,
+.us-btn,
+.others-btn {
+  color: c.color(cb-green);
+}
+
+.compare-symbols {
+  padding-right: 0.8rem;
+}
+
+.us-btn,
+.others-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0.7rem;
+}
+
+.us-btn {
+  background-color: white;
+}
+
+.others-btn {
+  border: 1px solid c.color(cb-green);
+}
+
+@media screen and (max-width: 900px) {
+  .compare-container{
+    display: none;
+  }
+}
