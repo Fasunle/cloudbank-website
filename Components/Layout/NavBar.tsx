@@ -7,7 +7,6 @@ import { config } from "@/config";
 import useComponentVisible from "./hooks/useComponentVisible";
 
 export default function Navbar() {
-  // const location = useRouter();
   const currentPathname = usePathname();
 
   const {
