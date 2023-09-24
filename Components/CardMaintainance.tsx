@@ -11,7 +11,7 @@ const CardMaintainance = () => {
               height={30}
               alt=''
               className='w-[30px] h-[30px]'
-              src={'/images/icons/freecard.png'}
+              src={'/images/freecard.png'}
             />
             <h1
               className='pl-[1rem] text-emerald-700 font-semibold text-[24px] xs-max:text-[18px] leading-9'
@@ -31,7 +31,7 @@ const CardMaintainance = () => {
             height={30}
             alt=''
             className='w-[522px] h-[466px]'
-            src={'/images/icons/freecard.png'}
+            src={'/images/freecard.png'}
           />
         </div>
       </div>

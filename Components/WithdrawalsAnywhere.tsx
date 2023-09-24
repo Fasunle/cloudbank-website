@@ -9,7 +9,7 @@ const WithdrawAnywhere = () => {
           height={466}
           alt='Wells Fago pics'
           className='w-[522px] h-[466px]'
-          src={'/images/icons/Rectangle-192.png'}
+          src={'/images/Rectangle-192.png'}
         />
       </div>
       <div className='ml-[3rem] w-[50%] xs-max:w-[100%] xs-max:ml-[0rem]'>
@@ -24,7 +24,7 @@ const WithdrawAnywhere = () => {
                 height={40}
                 alt=''
                 className='h-[23px] w-[23px] tablet-8:w-[34px] xs-max:w-[38px]'
-                src={'/images/icons/delete.png'}
+                src={'/images/delete.png'}
               />
             </span>
             <Image
@@ -32,7 +32,7 @@ const WithdrawAnywhere = () => {
               height={40}
               alt=''
               className='h-[20px] mr-[-1rem]'
-              src={'/images/icons/dollar.png'}
+              src={'/images/dollar.png'}
             />
             <h1 className=' ml-[2rem] xs-max:text-[18px]'>Withdrawals anywhere and everywhere</h1>
           </div>

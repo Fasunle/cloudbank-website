@@ -16,7 +16,7 @@ const Questions = () => {
               height={35}
               alt='Envelope'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/email.svg'}
+              src={'/images/email.svg'}
             />
             <p> contact hello@cloudbank.ng, cards@cloudbank.ng</p>
           </div>
@@ -26,7 +26,7 @@ const Questions = () => {
               height={35}
               alt='Phone'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/entypo_old-phone.svg'}
+              src={'/images/entypo_old-phone.svg'}
             />
             <p> 07089541277</p>
           </div>

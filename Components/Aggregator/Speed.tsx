@@ -14,7 +14,7 @@ const Speed = () => {
             height={600}
             alt='Woman'
             className='w-[500px] h-[600px]  xs-max:w-[400] xs-max:h-[400]'
-            src={'/images/icons/woman.png'}
+            src={'/images/woman.png'}
           />
         </div>
         <div className='leading-[24px] h-[80%] '>
@@ -24,7 +24,7 @@ const Speed = () => {
               height={35}
               alt='Circle'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/circlegreen.png'}
+              src={'/images/circlegreen.png'}
             />
             <p>On boarding of Agents within their region</p>
           </div>
@@ -34,7 +34,7 @@ const Speed = () => {
               height={35}
               alt='Circle'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/circlegreen.png'}
+              src={'/images/circlegreen.png'}
             />
             <p>
               Verification and monitoring of Agents
@@ -47,7 +47,7 @@ const Speed = () => {
               height={35}
               alt='Circle'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/circlegreen.png'}
+              src={'/images/circlegreen.png'}
             />
             <p>
               Retrieving POS from a Dormant Agent within
@@ -60,7 +60,7 @@ const Speed = () => {
               height={35}
               alt='Circle'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/circlegreen.png'}
+              src={'/images/circlegreen.png'}
             />
             <p>Ability to make a bulk request of 5 terminals</p>
           </div>
@@ -70,7 +70,7 @@ const Speed = () => {
               height={35}
               alt='Circle'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/circlegreen.png'}
+              src={'/images/circlegreen.png'}
             />
             <p>
               Terminal requests will be based on your
@@ -83,7 +83,7 @@ const Speed = () => {
               height={35}
               alt='Circle'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/circlegreen.png'}
+              src={'/images/circlegreen.png'}
             />
             <p>Access up to 20 terminals per time</p>
           </div>
@@ -93,7 +93,7 @@ const Speed = () => {
               height={35}
               alt='Circle'
               className='w-[35px] h-[35px] '
-              src={'/images/icons/circlegreen.png'}
+              src={'/images/circlegreen.png'}
             />
             <p>
               You will get a weekly report on the activities

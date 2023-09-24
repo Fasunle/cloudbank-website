@@ -72,7 +72,7 @@ export default function Navbar() {
 
         <div className={`navbar__menu ${isMenuVisible ? 'open' : ''}`}>
           <nav className='navbar__nav tablet-8:w-[400px] tablet-8:mr-10 lg:w-[502px] lg:mr-14 xl:mr-36'>
-            <Link href='/' className='navbar__nav-link home' onClick={closeMenu}>
+            <Link href='/' className='navbar__nav-link home ml-6 md:ml-0' onClick={closeMenu}>
               Home
             </Link>
 

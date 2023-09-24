@@ -14,21 +14,21 @@ const Ready = () => {
           <Image
             width={200}
             height={200}
-            src={'/images/icons/openaccount.png'}
+            src={'/images/openaccount.png'}
             alt='Open account'
             className=''
           />
           <Image
             width={200}
             height={200}
-            src={'/images/icons/ordercard.png'}
+            src={'/images/ordercard.png'}
             alt='Order card'
             className=''
           />
           <Image
             width={200}
             height={200}
-            src={'/images/icons/usingcard.png'}
+            src={'/images/usingcard.png'}
             alt='Using card'
             className=''
           />

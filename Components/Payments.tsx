@@ -18,7 +18,7 @@ function Payments() {
           <Image
             width={30}
             height={30}
-            src={'/images/icons/arrow.png'}
+            src={'/images/arrow.png'}
             alt='arrow'
             className='absolute ml-28 w-4 mt-11 pt-5'
           />
@@ -33,18 +33,12 @@ function Payments() {
           </button>
         </div>
         <div>
-          <Image
-            width={200}
-            height={200}
-            src={'/images/icons/verve.svg'}
-            alt='Verve'
-            className=''
-          />
+          <Image width={200} height={200} src={'/images/verve.svg'} alt='Verve' className='' />
           <div />
           <Image
             width={200}
             height={200}
-            src={'/images/icons/mobile.svg'}
+            src={'/images/mobile.svg'}
             alt='Mobile'
             className='mt-2'
           />
@@ -61,7 +55,7 @@ function Payments() {
             height={30}
             alt='Holding hands'
             className='w-[30px] h-[30px]'
-            src={'/images/icons/hold-hand.png'}
+            src={'/images/hold-hand.png'}
           />
         </div>
         <div className='w-1/2 ml-20 mt-10 leading-loose'>
@@ -76,7 +70,7 @@ function Payments() {
             height={30}
             alt='arrow'
             className='absolute ml-40 w-4 mt-2'
-            src={'/images/icons/arrow.svg'}
+            src={'/images/arrow.svg'}
           />
 
           <p
@@ -98,7 +92,7 @@ function Payments() {
             height={30}
             alt='arrow'
             className='absolute ml-40 w-4 mt-2'
-            src={'/images/icons/arrow.svg'}
+            src={'/images/arrow.svg'}
           />
           <p
             style={{ color: '#008080' }}
@@ -123,7 +117,7 @@ function Payments() {
             height={30}
             alt='arrow'
             className='absolute ml-40 w-4 mt-2'
-            src={'/images/icons/arrow.svg'}
+            src={'/images/arrow.svg'}
           />
           <p
             style={{ color: '#008080' }}
@@ -151,7 +145,7 @@ function Payments() {
             height={30}
             alt='Order Summary'
             className='w-full'
-            src={'/images/icons/arrow.svg'}
+            src={'/images/arrow.svg'}
           />
         </div>
       </div>

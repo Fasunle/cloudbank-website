@@ -23,7 +23,7 @@ const DropdownBox = ({ closeMenu }: { closeMenu(): void }) => {
               height={30}
               alt=''
               className='w-[30px] h-[30px]'
-              src={'/images/icons/cards.svg'}
+              src={'/images/cards.svg'}
             />
             Cards
           </li>
@@ -43,7 +43,7 @@ const DropdownBox = ({ closeMenu }: { closeMenu(): void }) => {
               height={30}
               alt=''
               className='w-[30px] h-[30px]'
-              src={'/images/icons/pos.svg'}
+              src={'/images/pos.svg'}
             />{' '}
             POS
           </li>
@@ -64,7 +64,7 @@ const DropdownBox = ({ closeMenu }: { closeMenu(): void }) => {
               height={30}
               alt=''
               className='w-[30px] h-[30px]'
-              src={'/images/icons/cloudpay.svg'}
+              src={'/images/cloudpay.svg'}
             />{' '}
             Cloudpay
           </li>
@@ -84,7 +84,7 @@ const DropdownBox = ({ closeMenu }: { closeMenu(): void }) => {
               height={30}
               alt=''
               className='w-[30px] h-[30px]'
-              src={'/images/icons/aggregator.svg'}
+              src={'/images/aggregator.svg'}
             />{' '}
             Aggregator
           </li>

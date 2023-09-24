@@ -14,7 +14,7 @@ const Withdrawals = () => {
           height={200}
           alt='line'
           className='z-10 ml-[1rem] w-[270px] tablet-8:w-[220px] xs-max:w-[200px]'
-          src={'/images/icons/line.png'}
+          src={'/images/line.png'}
         />
       </div>
       <div className='z-10 flex justify-center mt-[-3rem] '>
@@ -23,7 +23,7 @@ const Withdrawals = () => {
           height={200}
           alt='arrow head'
           className='z-10 ml-[20rem] tablet-8:ml-[18rem] xs-max:ml-[16rem]'
-          src={'/images/icons/arrowheadgreen.png'}
+          src={'/images/arrowheadgreen.png'}
         />
       </div>
     </div>

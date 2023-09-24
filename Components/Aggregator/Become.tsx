@@ -15,7 +15,7 @@ const Become = () => {
               height={35}
               alt=''
               className='w-[35px] h-[35px] '
-              src={'/images/icons/navbar-collapse.svg'}
+              src={'/images/navbar-collapse.svg'}
             />
             <p className='text-white xs-max:text-[14px]'>
               Cloudwallet POS is convenient,
@@ -29,7 +29,7 @@ const Become = () => {
               height={35}
               alt=''
               className='w-[35px] h-[35px] '
-              src={'/images/icons/Group.png.svg'}
+              src={'/images/Group.png.svg'}
             />
             <p className='xs-max:text-[14px]'>
               Cloudwallet POS has the
@@ -43,7 +43,7 @@ const Become = () => {
               height={35}
               alt=''
               className='w-[35px] h-[35px] '
-              src={'/images/icons/navbar-collapse.svg'}
+              src={'/images/navbar-collapse.svg'}
             />
             <p className='xs-max:text-[14px]'>
               Cloudwallet POS will provide
@@ -63,7 +63,7 @@ const Become = () => {
                 height={15}
                 alt='Mark'
                 className='w-[15px] h-[15px]'
-                src={'/images/icons/mark.png'}
+                src={'/images/mark.png'}
               />
               <p className='xs-max:text-[14px]'>15 Active agents and above</p>
             </div>
@@ -73,7 +73,7 @@ const Become = () => {
                 height={15}
                 alt='Mark'
                 className='w-[15px] h-[15px]'
-                src={'/images/icons/mark.png'}
+                src={'/images/mark.png'}
               />
               <p className='xs-max:text-[14px]'>5% general commission</p>
             </div>
@@ -83,7 +83,7 @@ const Become = () => {
                 height={15}
                 alt='Mark'
                 className='w-[15px] h-[15px]'
-                src={'/images/icons/mark.png'}
+                src={'/images/mark.png'}
               />
               <p className='xs-max:text-[14px]'>7% commission on transactions</p>
             </div>
@@ -96,7 +96,7 @@ const Become = () => {
                 height={15}
                 alt='Mark'
                 className='w-[15px] h-[15px]'
-                src={'/images/icons/mark.png'}
+                src={'/images/mark.png'}
               />
               <p className='xs-max:text-[14px]'>100 Active agents and above</p>
             </div>
@@ -106,7 +106,7 @@ const Become = () => {
                 height={15}
                 alt='Mark'
                 className='w-[15px] h-[15px]'
-                src={'/images/icons/mark.png'}
+                src={'/images/mark.png'}
               />
               <p className='xs-max:text-[14px]'>10% general commission</p>
             </div>
@@ -116,7 +116,7 @@ const Become = () => {
                 height={15}
                 alt='Mark'
                 className='w-[15px] h-[15px]'
-                src={'/images/icons/mark.png'}
+                src={'/images/mark.png'}
               />
               <p className='xs-max:text-[14px]'>10% commission on transactions</p>
             </div>

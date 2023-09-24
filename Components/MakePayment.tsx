@@ -11,7 +11,7 @@ const MakePayment = () => {
               height={30}
               alt=''
               className='w-[20px] h-[20px]'
-              src={'/images/icons/Vector.png'}
+              src={'/images/Vector.png'}
             />
             <h1
               className='pl-[1rem] font-semibold text-[24px] xs-max:text-[18px]'
@@ -31,7 +31,7 @@ const MakePayment = () => {
             layout={'fill'}
             alt=''
             className='w-[522px] h-[466px]'
-            src={'/images/icons/Rectangle-193.png'}
+            src={'/images/Rectangle-193.png'}
           />
           <div className='z-20 flex relative pl-[0.45rem] left-[8%] text-center bg-white border-2 border-gray-200 w-[400px] h-[80px] m-auto mt-[-3rem] items-center shadow-md tablet-8:w-[300px] xs-max:w-[200px] xs-max:w-[250px]'>
             <div
@@ -43,7 +43,7 @@ const MakePayment = () => {
                 height={30}
                 alt=''
                 className='mb-[-1rem] pb-[1rem] flex justify-center align-center text-center'
-                src={'/images/icons/portfolio.png'}
+                src={'/images/portfolio.png'}
               />
             </div>
             <p className='text-center text-[13px] font-medium w-[500px] xs-max:text-[10px]'>

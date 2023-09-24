@@ -19,7 +19,7 @@ const FinFreedom = () => {
           height={30}
           alt='Home Cloudbank'
           className='w-[30px] h-[30px]'
-          src={'/images/icons/Home-Cloudbank.png'}
+          src={'/images/Home-Cloudbank.png'}
         />
       </div>
     </div>

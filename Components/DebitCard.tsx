@@ -31,7 +31,7 @@ const DebitCard = () => {
           height={30}
           alt='cards'
           className='z-10 relative top-[-8rem]'
-          src={'/images/icons/card.png'}
+          src={'/images/card.png'}
         />
       </div>
       <div className='z-10 flex justify-center'>
@@ -40,7 +40,7 @@ const DebitCard = () => {
           height={30}
           alt='arrow'
           className='z-10 relative top-[-28rem] left-[10rem] xs-max:hidden'
-          src={'/images/icons/arrow.png'}
+          src={'/images/arrow.png'}
         />
       </div>
       <div className='justify-center'>
@@ -49,7 +49,7 @@ const DebitCard = () => {
           height={30}
           alt='rectangle'
           className='relative bottom-[42rem] left-[48rem] tablet-8:left-[37rem] xs-max:left-[27rem] xs-max:hidden tablet-8:hidden'
-          src={'/images/icons/Rectangle-188.png'}
+          src={'/images/Rectangle-188.png'}
         />
       </div>
     </div>

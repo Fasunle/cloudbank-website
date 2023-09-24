@@ -13,7 +13,7 @@ function Superfasts() {
             height={30}
             alt='Vector'
             className='z-10 tablet-8:left-[54%] xs-max:left-[40px] tablet-8:left-[40px] tablet-8:hidden xs-max:hidden'
-            src={'/images/icons/vector.png'}
+            src={'/images/vector.png'}
           />
         </span>
       </div>
