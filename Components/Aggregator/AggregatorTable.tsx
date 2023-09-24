@@ -1,12 +1,32 @@
 //
-
-const AggregatorTable = (
-  data: {
-    number: number;
-    revenue: string;
-    noOfTarminals: string;
-  }[],
-) => {
+const AggregatorTable = () => {
+  const data = [
+    {
+      number: 1,
+      revenue: '80 - 100',
+      noOfTarminals: 20,
+    },
+    {
+      number: 2,
+      revenue: '60 - 79',
+      noOfTarminals: 15,
+    },
+    {
+      number: 3,
+      revenue: '50 - 59',
+      noOfTarminals: 10,
+    },
+    {
+      number: 4,
+      revenue: '40 - 49',
+      noOfTarminals: 5,
+    },
+    {
+      number: 5,
+      revenue: 'Less than 39',
+      noOfTarminals: '1 - 4',
+    },
+  ];
   return (
     <div className='mt-[6rem]'>
       <table className='w-[900px] h-[300px] m-auto xs-max:w-[360px]' style={{}}>

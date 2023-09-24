@@ -3,8 +3,8 @@ import Head from 'next/head';
 type SEOType = {
   title: string;
   description: string;
-  metaDescription: string; // content description
-  author: string; // content author like Twitter Account name
+  metaDescription?: string; // content description
+  author?: string; // content author like Twitter Account name
 };
 
 /**
