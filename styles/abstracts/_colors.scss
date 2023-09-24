@@ -1,22 +1,21 @@
 // Cloudbank Colors
 
 $colors: (
-  "cb-black": #0f0f0f,
-  "cb-black-100": #313e3e,
-  "cb-black-200": #232323,
-  "cb-black-300": #07060d,
-  "cb-brown-100": #45050a,
-  "cb-green": #008080,
-  "cb-green-100": #d7ecec,
-  "cb-green-200": rgba(0, 128, 128, 0.2),
-  "cb-red": #db261b,
-  "cb-red-100": #fff0f0,
-  "cb-red-300": rgba(254, 163, 170, 0.3),
-  "cb-red-400": rgba(254, 163, 170, 0.4),
-  "cb-purple-100": rgba(204, 204, 255, 0.4),
+  'cb-black': #0f0f0f,
+  'cb-black-100': #313e3e,
+  'cb-black-200': #232323,
+  'cb-black-300': #07060d,
+  'cb-brown-100': #45050a,
+  'cb-green': #008080,
+  'cb-green-100': #d7ecec,
+  'cb-green-200': rgba(0, 128, 128, 0.2),
+  'cb-red': #db261b,
+  'cb-red-100': #fff0f0,
+  'cb-red-300': rgba(254, 163, 170, 0.3),
+  'cb-red-400': rgba(254, 163, 170, 0.4),
+  'cb-purple-100': rgba(204, 204, 255, 0.4),
   black: #000,
   white: #fff,
-
 );
 
 @function color($key) {
@@ -27,4 +26,3 @@ $colors: (
   @warn "Unknown `#{$key}` in $colors.";
   @return null;
 }
-

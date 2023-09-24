@@ -1,4 +1,4 @@
-@use "../abstracts/colors" as c;
+@use '../abstracts/colors' as c;
 
 .how-we-protect-you_header {
   background: #0f0f0f;
@@ -24,7 +24,7 @@
   width: 60vw;
   height: 45vw;
   border-radius: 10px;
-  background-image: url("/images/tiled_bg.png");
+  background-image: url('/images/tiled_bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +48,7 @@
 
 .how-we-protect-you_bottom-hero {
   width: 80vw;
-  background-image: url("/images/tiled_bg.png");
+  background-image: url('/images/tiled_bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

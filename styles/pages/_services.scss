@@ -3,7 +3,6 @@
 @use '../components/buttons';
 @use '../base/typography';
 
-
 .services {
   &__hero {
     margin-top: 30px;
@@ -88,7 +87,7 @@
     &-list {
       margin-bottom: 39px;
       list-style: none;
-      font-family: "Inter", sans-serif;
+      font-family: 'Inter', sans-serif;
       @include m.font(16px, normal, 190.02%);
 
       @include m.respond(phablet-max) {
@@ -106,13 +105,12 @@
       }
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 7px;
         left: -27px;
         @include m.equalSize(15px);
         background-color: c.color(cb-brown-100);
-
       }
     }
 

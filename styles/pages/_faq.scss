@@ -82,13 +82,13 @@
       top: 0;
       right: 0;
       transform: rotate(0);
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
 
     &.opened {
       &::after {
         transform: rotate(180deg);
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         // transition: all .5s cubic-bezier(1, 0, 1, 0);;
       }
     }
@@ -98,12 +98,12 @@
     max-height: 0;
     will-change: height;
     overflow: hidden;
-    transition: all .5s cubic-bezier(0, 1, 0, 1);
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 
     &.opened {
       height: auto;
       max-height: 9999px;
-      transition: all .5s cubic-bezier(1, 0, 1, 0);
+      transition: all 0.5s cubic-bezier(1, 0, 1, 0);
     }
 
     &--main {

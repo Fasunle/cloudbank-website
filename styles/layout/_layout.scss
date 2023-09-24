@@ -2,7 +2,6 @@
 @use '../abstracts/mixins' as m;
 @use '../components/buttons';
 
-
 .main {
   margin-top: 140px;
   min-height: 28vh;
@@ -36,7 +35,6 @@
     }
 
     a {
-      
       @include m.respond(phone) {
         width: 48% !important;
       }
@@ -48,7 +46,8 @@
       }
 
       @include m.respond(phone-smallest) {
-        &:first-of-type,&:nth-of-type(2) {
+        &:first-of-type,
+        &:nth-of-type(2) {
           // display: inline-block;
           margin-bottom: 20px;
         }

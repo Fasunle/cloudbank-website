@@ -3,1441 +3,1375 @@
 @use '../components/buttons';
 @use '../base/typography';
 
-@import "../abstracts/grid";
-
-
+@import '../abstracts/grid';
 
 .pointofsale {
+  width: 100%;
+  height: max-content;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0%;
+  top: 0px;
+
+  @media screen and (min-width: 601px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__a1 {
+    position: absolute;
     width: 100%;
-    height: max-content;
-    margin: 0px;
-    margin-bottom: 20px;
-    padding: 0%;
-    top: 0px;
-    
-    @media screen and (min-width: 601px) {
-         display: flex;
-         flex-direction: column;
+    height: 70vh;
+    left: 0px;
+    margin-top: 12%;
+    background: linear-gradient(90deg, #008080 0%, #489494 23.06%);
+
+    @include m.respond(tablet-wide) {
+      width: 100%;
+    }
+    @include m.respond(tablet-8) {
+      width: 100%;
+      height: 500px;
+    }
+
+    @include m.respond(phablet-max) {
+      width: 100%;
+      height: 350px;
+    }
+
+    @include m.respond(phone) {
+      width: 100%;
+      height: 350px;
+    }
+
+    @include m.respond(phone-small) {
+      width: 100%;
+      height: 350px;
+      padding: 0%;
+    }
+    @include m.respond(phone-smallest) {
+      left: 0px;
+      top: 0px;
+    }
+  }
+  &__title {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 12%;
+    margin-left: 10px;
+    height: 60vh;
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    justify-content: center;
+
+    @include m.respond(tablet-8) {
+      width: 99%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include m.respond(phablet-max) {
+      width: 99%;
+      height: 350px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    @include m.respond(phone) {
+      width: 99%;
+      height: 350px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    @include m.respond(phone-medium) {
+      width: 99%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    @include m.respond(phone-smallest) {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+    }
+
+    .tityle {
+      position: relative;
+      left: 0px;
+      text-transform: uppercase;
+      color: c.color(cb-white-700);
+
+      @include m.respond(desktop) {
+        width: 100%;
+        text-align: left;
         justify-content: center;
-       
-    }
-
-
-    &__a1 {
-        position: absolute;
-        width: 100%;        
-        height: 70vh;
-        left: 0px;
-        margin-top: 12%;
-        background: linear-gradient(90deg, #008080 0%, #489494 23.06%);
-
-       @include m.respond(tablet-wide) {
-        width: 100%;      
+        align-items: center;
       }
-        @include m.respond(tablet-8) {
-            width: 100%;
-            height: 500px;
-            
-            
-          }
-      
-          @include m.respond(phablet-max) {
-            width: 100%;
-            height: 350px;
-           
-           
-          }
-      
-          @include m.respond(phone) {
-            width: 100%;
-            height: 350px;
-           
-          }
-      
-          @include m.respond(phone-small) {
-            width: 100%;
-            height: 350px;
-            padding: 0%;
-           
-          }
-          @include m.respond(phone-smallest) {
-            left: 0px;
-            top: 0px;
-          }
+      @include m.respond(desktop-small) {
+        width: 100%;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @include m.respond(tablet-wide) {
+        width: 100%;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @include m.respond(tablet-8) {
+        width: 100%;
+        text-align: center;
+      }
+
+      @include m.respond(phablet-max) {
+        width: 100%;
+        text-align: center;
+      }
+
+      @include m.respond(phone-wide) {
+        width: 98%;
+        text-align: center;
+      }
+
+      @include m.respond(phone) {
+        text-align: center;
+      }
+
+      @include m.respond(phone-small) {
+        text-align: center;
+      }
+      @include m.respond(phone-smallest) {
+        width: 90%;
+        font-size: 120%;
+      }
     }
-    &__title {
-        width:40% ;
-        display: flex;
-        flex-direction: column;
+
+    .arrow {
+      display: flex;
+      position: relative;
+      width: 500px;
+      height: 3px;
+      background: #ffffff;
+      border-radius: 5px;
+
+      @include m.respond(tablet-8) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+
+      @include m.respond(phablet-max) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+
+      @include m.respond(phone-wide) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+
+      @include m.respond(phone) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+
+      @include m.respond(phone-small) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+      @include m.respond(phone-smallest) {
+        width: 90%;
+        margin-left: 0px;
+      }
+      .arrowhead {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 480px;
+        top: -15px;
+        background-image: url('/images/roundtri.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: cover;
+
+        @include m.respond(tablet-8) {
+          display: none;
+        }
+      }
+    }
+
+    .meet {
+      position: relative;
+      width: 447px;
+      height: 60px;
+      left: 0px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 60px;
+      color: #ffffff;
+
+      @include m.respond(tablet-8) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+
+      @include m.respond(phablet-max) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+
+      @include m.respond(phone-wide) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 130%;
+      }
+
+      @include m.respond(phone) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 130%;
+      }
+
+      @include m.respond(phone-small) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 130%;
+      }
+      @include m.respond(phone-smallest) {
+        width: 90%;
+        font-size: 80%;
+      }
+    }
+    .word {
+      position: relative;
+      width: 406px;
+      height: 68px;
+      left: 0px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 34px;
+
+      @include m.respond(tablet-8) {
+        width: 60%;
+      }
+
+      @include m.respond(phablet-max) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+      @include m.respond(phone-wide) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 90%;
+      }
+
+      @include m.respond(phone) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 90%;
+      }
+
+      @include m.respond(phone-small) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 80%;
+      }
+      @include m.respond(phone-smallest) {
+        width: 90%;
+        font-size: 80%;
+      }
+    }
+    .order {
+      @extend .btn-primary;
+      position: relative;
+      width: 200px;
+      height: 50px;
+      left: 0px;
+      border-radius: 5px;
+      color: c.color(cb-green);
+      background-color: c.color(white);
+
+      @include m.respond(tablet-8) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+
+      @include m.respond(phablet-max) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+      }
+      @include m.respond(phone-wide) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 90%;
+      }
+
+      @include m.respond(phone) {
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        font-size: 90%;
+      }
+
+      @include m.respond(phone-small) {
+        width: 60%;
         position: relative;
-        margin-top: 12%;
-        margin-left: 10px; 
-        height: 60vh;
-        z-index: 100;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 80%;
+      }
+    }
+  }
+  &__a2 {
+    position: absolute;
+    width: 45%;
+    height: 90vh;
+    right: 0;
+    margin-top: 8%;
+    z-index: 100;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: cover;
+    background-color: #0f0f0f;
+    margin-right: 20px;
+    background-image: url('/images/pos.jpg');
+
+    @include m.respond(tablet-wide) {
+      width: 40%;
+      height: 70%;
+    }
+    @include m.respond(tablet-medium) {
+      width: 40%;
+      height: 70%;
+    }
+
+    @include m.respond(tablet-8) {
+      display: none;
+    }
+  }
+}
+
+.paymentrecon {
+  width: 100%;
+  height: 70vh;
+  margin: 0px;
+  margin-top: 170px;
+  margin-bottom: 100px;
+
+  @include m.respond(tablet-wide) {
+    margin-top: 100px;
+    height: 400px;
+  }
+  @include m.respond(phablet-max) {
+    margin-top: 100px;
+    height: 300px;
+  }
+  @include m.respond(phone-wide) {
+    margin-top: 100px;
+  }
+  @include m.respond(phone-smallest) {
+    margin-top: 350px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    left: 0px;
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.respond(tablet-wide) {
+      height: 0vh;
+      margin-top: 0px;
+    }
+    @include m.respond(phablet-max) {
+      height: 0vh;
+      margin-top: 90px;
+    }
+
+    .b1 {
+      color: c.color(cb-green);
+      text-align: center;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 43px;
+
+      @include m.respond(tablet-wide) {
+        width: 100%;
+        font-size: 250%;
+      }
+
+      @include m.respond(tablet-8) {
+        font-size: 160%;
+      }
+      @include m.respond(phone-wide) {
+        width: 90%;
+        font-size: 100%;
+      }
+    }
+
+    .wrapper1 {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      left: 0px;
+      text-align: left;
+      margin-top: 10%;
+
+      @include m.respond(tablet-wide) {
+        margin-top: 10%;
+      }
+      @include m.respond(phone-small) {
+        margin-top: 15%;
+      }
+
+      .left {
+        position: relative;
+        display: flex;
+        flex: 1;
+        width: 50%;
         font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        color:#FFFFFF;
-        justify-content: center;
+        color: #000000;
+        background: #f3f3f3;
 
-        @include m.respond(tablet-8) {
-            width: 99%;
-            text-align: center;
-            justify-content: center;
-            align-items: center; 
-          }
-
-        
-          @include m.respond(phablet-max) {
-            width: 99%;
-            height: 350px;
-            margin-left: 0px;
-            margin-right: 0px;
-          }
-      
-          @include m.respond(phone) {
-            width: 99%;
-            height: 350px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            margin-left: 0px; 
-            margin-right: 0px;
-           
-          }
-      
-          @include m.respond(phone-medium) {
-            width: 99%;
-            text-align: center;
-            justify-content: center;
-            align-items: center; 
-            margin-left: 0px;
-            margin-right: 0px;
-          }
-          @include m.respond(phone-smallest) {
-            position: absolute;
-            width: 100%;
-            left: 0px;
-            top: 0px;
-          }
-        
-
-        .tityle{
-            position: relative;
-            left: 0px;
-            text-transform: uppercase;
-            color: c.color(cb-white-700);
-            
-            @include m.respond(desktop) {
-              width: 100%;
-              text-align: left;
-              justify-content: center;
-              align-items: center;
-            }
-           @include m.respond(desktop-small) {
-                width: 100%;
-                text-align: left;
-                justify-content: center;
-                align-items: center; 
-           }
-
-            @include m.respond(tablet-wide) {
-            width: 100%;
-            text-align: left;
-            justify-content: center;
-            align-items: center; 
-           }
-    
-            @include m.respond(tablet-8) {
-                width: 100%;
-                text-align: center; 
-              }
-    
-              @include m.respond(phablet-max) {
-                width: 100%;
-                text-align: center;
-              }
-            
-              @include m.respond(phone-wide) {
-                width: 98%;
-                text-align: center;
-              }
-          
-              @include m.respond(phone) {
-                text-align: center;
-              }
-          
-              @include m.respond(phone-small) {
-                text-align: center;
-              }
-              @include m.respond(phone-smallest) {
-                width: 90%;
-                font-size: 120%;
-              }
-        }
-
-        .arrow{
+        @include m.respond(phone-wide) {
+          width: 100%;
           display: flex;
-            position: relative;
-            width: 500px;
-            height: 3px;
-            background: #FFFFFF;
-            border-radius: 5px;
-
-            @include m.respond(tablet-8) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-              }
-
-              @include m.respond(phablet-max) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-              }
-          
-              @include m.respond(phone-wide) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-              }
-          
-              @include m.respond(phone) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-              }
-          
-              @include m.respond(phone-small) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-              }
-              @include m.respond(phone-smallest) {
-                width: 90%;
-                margin-left: 0px;
-              }
-              .arrowhead{
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                left: 480px;
-                top: -15px;
-                background-image: url("/images/roundtri.png");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-clip: cover;
-    
-                @include m.respond(tablet-8) {
-                    display: none;
-                  }
-            }
-        }
-        
-        .meet{
-        position: relative;
-        width: 447px;
-        height: 60px;
-        left: 0px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 35px;
-        line-height: 60px;
-        color:#ffffff;
-
-        @include m.respond(tablet-8) {
-          width: 98%;
+          flex-direction: column;
           text-align: center;
+          justify-content: center;
           align-items: center;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+
+        .meet {
+          position: absolute;
+          width: 95%;
+          height: 60px;
+          margin-left: 20px;
+          top: 70px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 60px;
+
+          @include m.respond(tablet-wide) {
+            left: 0px;
           }
 
-          @include m.respond(phablet-max) {
-            width: 98%;
-            text-align: center;
-            align-items: center;
+          @include m.respond(tablet-8) {
+            left: 0px;
           }
-        
-          @include m.respond(phone-wide) {
-            width: 98%;
-            text-align: center;
-            align-items: center;
-            font-size:130%;
+
+          @include m.respond(phablet) {
+            font-size: 20px;
           }
-      
-          @include m.respond(phone) {
-            width: 98%;
-            text-align: center;
-            align-items: center;
-            font-size:130%;
-          }
-      
-          @include m.respond(phone-small) {
-            width: 98%;
-            text-align: center;
-            align-items: center;
-            font-size:130%;
-          }
-          @include m.respond(phone-smallest) {
+        }
+        .word {
+          position: absolute;
+          width: 390px;
+          height: 68px;
+          margin-left: 20px;
+          top: 130px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 34px;
+          color: #3d3d3d;
+
+          @include m.respond(tablet-wide) {
+            left: 0px;
             width: 90%;
-            font-size: 80%;
           }
-        
-        }
-        .word{
-            position: relative;
-            width: 406px;
-            height: 68px;
+
+          @include m.respond(tablet-8) {
             left: 0px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 34px;
-
-            @include m.respond(tablet-8) {
-                width: 60%;
-              }
-
-              @include m.respond(phablet-max) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-              }
-              @include m.respond(phone-wide) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-                font-size:90%;
-              }
-          
-              @include m.respond(phone) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-                font-size:90%;
-              }
-          
-              @include m.respond(phone-small) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-                font-size:80%;
-              }
-              @include m.respond(phone-smallest) {
-              width: 90%;
-              font-size: 80%;
-            }
-            
-        }
-        .order{
-            @extend .btn-primary;
-            position: relative;
-            width: 200px;
-            height: 50px;
-            left: 0px;
-            border-radius: 5px;
-            color: c.color(cb-green);
-            background-color: c.color(white);
-
-            @include m.respond(tablet-8) {
-              width: 98%;
-              text-align: center;
-              align-items: center;
-              }
-
-              @include m.respond(phablet-max) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-              }
-              @include m.respond(phone-wide) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-                font-size:90%;
-              }
-          
-              @include m.respond(phone) {
-                width: 98%;
-                text-align: center;
-                align-items: center;
-                font-size:90%;
-              }
-          
-              @include m.respond(phone-small) {
-                width: 60%;
-                position: relative;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                font-size:80%;
-              }
-            
-        }
-    }
-    &__a2 {
-        position: absolute;
-        width: 45%;
-        height: 90vh;
-        right: 0;
-        margin-top: 8%;
-        z-index: 100;
-        border-radius: 20px;
-        background-position:center;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-clip: cover;
-        background-color: #0f0f0f;
-        margin-right: 20px;
-        background-image: url("/images/pos.jpg");
-
-        @include m.respond(tablet-wide) {
-          width: 40%;
-          height: 70%;
-        }
-        @include m.respond(tablet-medium) {
-          width: 40%;
-          height: 70%;
-        }
-
-        @include m.respond(tablet-8) {
-            display: none;
+            width: 90%;
           }
-       
-    }
-}
-
-.paymentrecon {
-    width: 100%;
-    height: 70vh;
-    margin: 0px;
-    margin-top: 170px;
-    margin-bottom: 100px;
-
-    @include m.respond(tablet-wide) {
-      margin-top: 100px;
-      height: 400px;
-    }
-    @include m.respond(phablet-max) {
-      margin-top: 100px;
-      height: 300px;
-    }
-    @include m.respond(phone-wide) {
-      margin-top: 100px;
-    }
-    @include m.respond(phone-smallest) {
-      margin-top: 350px;
-    }
-    
-
-
-    &__wrapper{
-        position: absolute;
-        width: 100%;
-        height: 70vh;
-        left: 0px;
-        margin-top: 90px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-
-        @include m.respond(tablet-wide) {
-          height: 0vh;
-          margin-top: 0px;
+          @include m.respond(phone-wide) {
+            width: 90%;
+            top: 0px;
+            position: relative;
+          }
         }
-        @include m.respond(phablet-max) {
-          height: 0vh;
-          margin-top: 90px;
-        }
+        .order {
+          @extend .btn-primary;
+          position: absolute;
+          width: 200px;
+          height: 50px;
+          margin-left: 20px;
+          top: 230px;
+          border-radius: 5px;
+          color: c.color(white);
+          background-color: c.color(cb-green);
 
-
-        
-
-        .b1 {
-            color:c.color(cb-green);
-            text-align: center;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 43px;
-
-            @include m.respond(tablet-wide) {
-              width: 100%;
-              font-size: 250%;
-            }
-            
-            @include m.respond(tablet-8) {
-              font-size: 160%;
-            }
-            @include m.respond(phone-wide) {
-              width: 90%;
-              font-size: 100%;
-            }
-          
- 
-        }
-
-        .wrapper1 {
-            position: absolute;
-            display: flex;
-            width: 100%;
+          @include m.respond(tablet-wide) {
             left: 0px;
-            text-align: left;
+          }
+
+          @include m.respond(tablet-8) {
+            left: 0px;
+            margin-top: 10px;
+          }
+          @include m.respond(phone-wide) {
+            width: 60%;
+            position: relative;
+            top: 0px;
             margin-top: 10%;
-
-            @include m.respond(tablet-wide) {
-              margin-top: 10%;
-              }
-              @include m.respond(phone-small) {
-                margin-top: 15%;
-              }
-              
-            .left {
-               position: relative;
-                display: flex;
-                flex: 1;
-                width: 50%; 
-                font-family: 'Poppins', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                color:#000000;
-                background: #F3F3F3;
-
-                @include m.respond(phone-wide) {
-                  width: 100%;
-                  display: flex;
-                  flex-direction: column;
-                   text-align: center;
-                   justify-content: center;
-                   align-items: center;
-                   margin-left: 0px; 
-                   margin-right: 0px;
-                 }
-
-                .meet{
-                    position: absolute;
-                    width: 95%;
-                    height: 60px;
-                    margin-left: 20px;
-                    top: 70px;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 25px;
-                    line-height: 60px;
-
-                    @include m.respond(tablet-wide) {
-                      left:0px;
-                    }
-                    
-                    @include m.respond(tablet-8) {
-                        left: 0px;
-                      }
-                    
-                      @include m.respond(phablet) {
-                        font-size: 20px;
-                      }
-
-                    }
-                    .word{
-                        position: absolute;
-                        width: 390px;
-                        height: 68px;
-                        margin-left: 20px;
-                        top: 130px;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 13px;
-                        line-height: 34px;
-                        color: #3D3D3D;
-
-                        @include m.respond(tablet-wide) {
-                          left:0px;
-                          width: 90%;
-                        }
-
-                        @include m.respond(tablet-8) {
-                            left: 0px;
-                            width: 90%;
-                          }
-                          @include m.respond(phone-wide) {
-                            width:90%;
-                            top: 0px;
-                            position: relative;
-                           }
-                    }
-                    .order{
-                        @extend .btn-primary;
-                        position: absolute;
-                        width: 200px;
-                        height: 50px;
-                        margin-left: 20px;
-                        top: 230px;
-                        border-radius: 5px;
-                        color: c.color(white);
-                        background-color: c.color(cb-green);
-
-                        @include m.respond(tablet-wide) {
-                          left:0px;
-                        }
-            
-                        @include m.respond(tablet-8) {
-                            left: 0px;
-                            margin-top: 10px;
-                          }
-                          @include m.respond(phone-wide) {
-                            width: 60%;
-                            position: relative;
-                            top: 0px;
-                            margin-top: 10%; 
-                          }
-                    }
-            }
-            .right {
-                flex: 1;
-                height: 450px;
-                background-image: url("/images/shop.jpg");
-                background-position:center;
-                background-repeat: no-repeat;
-                background-size:cover;
-                @include m.respond(phone-wide) {
-                  flex:none;
-                 }
-                
-            }
+          }
         }
+      }
+      .right {
+        flex: 1;
+        height: 450px;
+        background-image: url('/images/shop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include m.respond(phone-wide) {
+          flex: none;
+        }
+      }
     }
-
+  }
 }
 
 .Becomeanagent {
-    width: 100%;
-    margin: 0px;
-    height: 70vh;
+  width: 100%;
+  margin: 0px;
+  height: 70vh;
 
-    @include m.respond(phablet-max) {
+  @include m.respond(phablet-max) {
+    margin-top: 200px;
+    height: 350px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 70vh;
+    left: 0px;
+    padding: 20px;
+    text-align: center;
+
+    .wrapper1 {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      left: 0px;
+      height: 70vh;
+      text-align: left;
       margin-top: 200px;
-      height: 350px;
-    }
-    
-   
+      margin-bottom: 50px;
 
-    &__wrapper{
-        width: 100%;
-        height: 70vh;
-        left: 0px;
-        padding: 20px;
-        text-align: center;
-
-      
-        
-
-        .wrapper1 {
-            position: absolute;
-            display: flex;
-            width: 100%;
-            left: 0px;
-            height: 70vh;
-            text-align: left;
-            margin-top: 200px;
-            margin-bottom: 50px;
-        
-             @include m.respond(phablet-max) {
-              margin-top: 120px;
-              height: 300px;
-             }
-
-             @include m.respond(tablet-wide) {
-              height: 500px;
-
-              }
-              @include m.respond(tablet-wide) {
-                height: 500px;   
-              }
-                @include m.respond(tablet-8) {
-                  height: 450px;
-                    
-                    
-                  }
-                 
-                  @include m.respond(phone-smallest) {
-                    margin-top: 180px; 
-
-                  }
-              
-                  @include m.respond(phone) {
-                    height: 300px;
-                  }
-              
-                  @include m.respond(phone-small) {
-                    height: 300px;
-                  }
-             
-
-
-            .right {
-                display: flex;
-                position: relative;
-                flex: 1;
-                width: 50%;
-                height: 450px;
-                padding-left: 10px; 
-                font-family: 'Poppins', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                color:#000000;
-                background-color: #F3F3F3;
-               
-
-                @include m.respond(tablet-8) {
-                    width: 50%;
-                  }
-                  @include m.respond(phone-wide) {
-                    width: 100%;
-                   }
-                   @include m.respond(phone-smallest) {
-                    width: 100%;
-                   
-                   }
-
-                 .title{
-                     width: 100%;
-                     @include m.respond(phone-wide) {
-                          width: 100%;
-                          display: flex;
-                          flex-direction: column;
-                          text-align: center;
-                          justify-content: center;
-                          align-items: center;
-                          margin-left: 0px; 
-                          margin-right: 0px;
-                          padding: 0px;
-                   }
-                    .meet {
-                      position: absolute;
-                      width: fit-content;
-                      height: 60px;
-                      left: 0;
-                      top: 70px;
-                      margin-left: 100px;
-                      font-family: 'Poppins';
-                      font-style: normal;
-                      font-weight: 600;
-                      font-size: 25px;
-                      line-height: 60px;
-  
-                      @include m.respond(tablet-8) {
-                        margin-left: 20px;
-                      }
-  
-                      @include m.respond(phone-wide) {
-                        width: 100%;
-                        position: relative;
-                        font-size: 18px;
-                        margin: 0px;
-                        top: 0px;
-                      }
-                      }
-                  .word {
-                          position: absolute;
-                          width: 390px;
-                          height: 68px;
-                          margin-left: 100px;
-                          left: 0;
-                          top: 130px;
-                          font-family: 'Poppins';
-                          font-style: normal;
-                          font-weight: 600;
-                          font-size: 13px;
-                          line-height: 34px;
-                          color: #3D3D3D;
-  
-                          @include m.respond(tablet-medium) {
-                              width: 80%;
-                            }
-                          
-                            @include m.respond(tablet-8) {
-                              width: 65%;
-                              margin-left: 20px;
-                            }
-                            @include m.respond(phone-wide) {
-                              width: 98%;
-                              position: relative;
-                              font-size: 11px;
-                              top: 0px;
-                              margin-left: 0px;
-                            }
-  
-                      }
-                      .order{
-                          @extend .btn-primary;
-                          position: absolute;
-                          width: 200px;
-                          margin-left: 100px;
-                          height: 50px;
-                          left: 0;
-                          top: 230px;
-                          border-radius: 5px;
-                          color: c.color(white);
-                          background-color: c.color(cb-green);
-  
-                           @include m.respond(tablet-wide) {
-                            margin-left: 100px;
-                            }
-                            @include m.respond(tablet-8) {
-                              left: 20px;
-                              margin-left: 0px;
-                              margin-top: 40px;
-                            }
-                            @include m.respond(phone-wide) {
-                              width: 60%;
-                              position: relative;
-                              margin-top: 10%;
-                              left: 0px;
-                              top: 0px;
-                            }
-                            
-                      }
-                   }
-            }
-            .left {
-                flex: 1;
-                width: 30%;
-                height: 450px;
-                background-image: url("/images/posstation.jpg");
-                background-position:center;
-                background-repeat: no-repeat;
-                background-size:cover;
-                
-
-                @include m.respond(tablet-8) {
-                    width: 70%;
-                  }
-                  @include m.respond(phone-wide) {
-                    display: none;
-                  }
-                
-            }
-        }
-    }
-
-}
-.businesssolution{
-    width: 100%;
-    margin: 0px;
-    height: 70vh;
-    margin-top: 350px;
-    margin-bottom: 0px;
-
-    @include m.respond(tablet-wide) {
-      margin-top: 350px;
-      height: 500px;
+      @include m.respond(phablet-max) {
+        margin-top: 120px;
+        height: 300px;
       }
-      
-          @include m.respond(phablet-max) {
-            margin-top: 320px;
-            height: 350px;
-          }
-      
-    
-    &__para {
-        position: absolute;
-        width: 100%;
-        left: 0px;
 
-        @include m.respond(phone-wide) {
-          height: 350px;
+      @include m.respond(tablet-wide) {
+        height: 500px;
+      }
+      @include m.respond(tablet-wide) {
+        height: 500px;
+      }
+      @include m.respond(tablet-8) {
+        height: 450px;
+      }
+
+      @include m.respond(phone-smallest) {
+        margin-top: 180px;
+      }
+
+      @include m.respond(phone) {
+        height: 300px;
+      }
+
+      @include m.respond(phone-small) {
+        height: 300px;
+      }
+
+      .right {
+        display: flex;
+        position: relative;
+        flex: 1;
+        width: 50%;
+        height: 450px;
+        padding-left: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+        background-color: #f3f3f3;
+
+        @include m.respond(tablet-8) {
+          width: 50%;
         }
-        
-             
-        
+        @include m.respond(phone-wide) {
+          width: 100%;
+        }
+        @include m.respond(phone-smallest) {
+          width: 100%;
+        }
 
-        .wrapper{
-            display: flex;
+        .title {
+          width: 100%;
+          @include m.respond(phone-wide) {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0px;
+          }
+          .meet {
+            position: absolute;
+            width: fit-content;
+            height: 60px;
+            left: 0;
+            top: 70px;
+            margin-left: 100px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 60px;
 
             @include m.respond(tablet-8) {
-                display: flex;
-                flex-direction: row;
-              }
-              @include m.respond(phone-wide) {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-
-              }
-        
-              @include m.respond(phone-small) {
-               display: flex;
-               flex-direction: column;
-               width: 100%;
-              }
-
-            .left {
-                flex: 1;
-                width: 60%;
-
-                @include m.respond(tablet-wide) {
-                 width: 40%;
-                  }
-
-                @include m.respond(tablet-8) {
-                    width: 40%;
-                  }
-                
-                  @include m.respond(phone-wide) {
-                    width: 90%;
-                  }
-            
-                  @include m.respond(phone-small) {
-                    width: 90%;
-                  }
-
-                .bar {
-                    width: 130px;
-                    height: 4px;
-                    background: #008080;
-                    border-radius: 5px;
-                    margin-left: 30px;
-
-                        @include m.respond(phone-wide) {
-                          width: 60px;
-                          margin-left: 10px;
-                        }
-                  
-                        @include m.respond(phone-small) {
-                          width: 60px;
-                        }
-                }
-                .title {
-                    width: 80%;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 41px;
-                    color: #0F0F0F;
-                    margin-left: 30px;
-
-                    @include m.respond(tablet-wide) {
-                      font-size: 150%;
-                      }
-
-                    @include m.respond(tablet-8) {
-                      font-size: 150%;
-                      }
-                    
-                      @include m.respond(phone-wide) {
-                        font-size: 150%;
-                        margin-left: 10px;
-                      }
-                
-                      @include m.respond(phone-small) {
-                        font-size: 120%;
-                      }
-                }
-                .bodyy {
-                    width: 90%;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 14px;
-                    color: #3D3D3D;
-                    margin-left: 30px;
-                    margin-top: 20px;
-                    line-height: 40px;
-
-                    @include m.respond(tablet-wide) {
-                      width: 90%;
-                      font-size: 14px;
-                      line-height: 20px;
-                      }
-
-                    @include m.respond(tablet-8) {
-                        width: 80%;
-                        font-size: 10px;
-                        line-height: 20px;
-                        
-                      }
-                      @include m.respond(phablet-max) {
-                        width: 80%;
-                        font-size: 12px;
-                        line-height: 20px;
-                      }
-                  
-                      @include m.respond(phone-wide) {
-                        display: none;
-                      }
-                
-                      @include m.respond(phone-small) {
-                        display: none;
-                      }
-                    
-                }
-                .req {
-                    width: 80%;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #008080;
-                    margin-left: 30px;
-                    margin-top: 40px;
-
-                    @include m.respond(phone-wide) {
-                      width: 90%;
-                      margin-left: 10px;
-                      margin-top: 4%;
-                      font-size: 60%;
-                    }
-              
-
-                    .req1 {
-                        display: flex;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 14px;
-                        color: #008080;
-                        align-items: center;
-
-                        @include m.respond(tablet-8) {
-                            font-size: 10px;
-                          }
-
-                       .arrow{
-                          width: 15px;
-                          height: 12px;
-                          color: c.color(cb-green);
-                          margin-left: 2px;
-
-                          @include m.respond(tablet-8) {
-                            width: 12px;
-                            height: 10px;
-                          }
-                          
-                          @include m.respond(phablet-max) {
-                            width: 12px;
-                            height: 10px;
-                          }
-                      
-                          @include m.respond(phone-wide) {
-                            width: 12px;
-                            height: 9px;
-                          }
-      
-                          @include m.respond(phone-small) {
-                            width: 10px;
-                            height: 7px;
-                          }
-                          
-                        }
-                    }
-                }
+              margin-left: 20px;
             }
-            .right {
-                flex: 1;
-                width: 40%;
-                display: grid;
-                grid-template-rows: 50% 50%;
 
-                @include m.respond(tablet-wide) {
-                  width: 60%;
-                  }
-
-                @include m.respond(phone-wide) {
-                  width: 80%;
-                }
-          
-                @include m.respond(phone-small) {
-                  width: 80%;
-                }
+            @include m.respond(phone-wide) {
+              width: 100%;
+              position: relative;
+              font-size: 18px;
+              margin: 0px;
+              top: 0px;
             }
+          }
+          .word {
+            position: absolute;
+            width: 390px;
+            height: 68px;
+            margin-left: 100px;
+            left: 0;
+            top: 130px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 34px;
+            color: #3d3d3d;
+
+            @include m.respond(tablet-medium) {
+              width: 80%;
+            }
+
+            @include m.respond(tablet-8) {
+              width: 65%;
+              margin-left: 20px;
+            }
+            @include m.respond(phone-wide) {
+              width: 98%;
+              position: relative;
+              font-size: 11px;
+              top: 0px;
+              margin-left: 0px;
+            }
+          }
+          .order {
+            @extend .btn-primary;
+            position: absolute;
+            width: 200px;
+            margin-left: 100px;
+            height: 50px;
+            left: 0;
+            top: 230px;
+            border-radius: 5px;
+            color: c.color(white);
+            background-color: c.color(cb-green);
+
+            @include m.respond(tablet-wide) {
+              margin-left: 100px;
+            }
+            @include m.respond(tablet-8) {
+              left: 20px;
+              margin-left: 0px;
+              margin-top: 40px;
+            }
+            @include m.respond(phone-wide) {
+              width: 60%;
+              position: relative;
+              margin-top: 10%;
+              left: 0px;
+              top: 0px;
+            }
+          }
         }
+      }
+      .left {
+        flex: 1;
+        width: 30%;
+        height: 450px;
+        background-image: url('/images/posstation.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include m.respond(tablet-8) {
+          width: 70%;
+        }
+        @include m.respond(phone-wide) {
+          display: none;
+        }
+      }
     }
+  }
+}
+.businesssolution {
+  width: 100%;
+  margin: 0px;
+  height: 70vh;
+  margin-top: 350px;
+  margin-bottom: 0px;
+
+  @include m.respond(tablet-wide) {
+    margin-top: 350px;
+    height: 500px;
+  }
+
+  @include m.respond(phablet-max) {
+    margin-top: 320px;
+    height: 350px;
+  }
+
+  &__para {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+
+    @include m.respond(phone-wide) {
+      height: 350px;
+    }
+
+    .wrapper {
+      display: flex;
+      width: 100%;
+
+      @include m.respond(tablet-8) {
+        display: flex;
+        flex-direction: row;
+      }
+      @include m.respond(phone-wide) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      @include m.respond(phone-small) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .left {
+        flex: 1;
+        width: 60%;
+
+        @include m.respond(tablet-wide) {
+          width: 40%;
+        }
+
+        @include m.respond(tablet-8) {
+          width: 40%;
+        }
+
+        @include m.respond(phone-wide) {
+          width: 90%;
+        }
+
+        @include m.respond(phone-small) {
+          width: 90%;
+        }
+
+        .bar {
+          width: 130px;
+          height: 4px;
+          background: #008080;
+          border-radius: 5px;
+          margin-left: 30px;
+
+          @include m.respond(phone-wide) {
+            width: 60px;
+            margin-left: 10px;
+          }
+
+          @include m.respond(phone-small) {
+            width: 60px;
+          }
+        }
+        .title {
+          width: 80%;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 41px;
+          color: #0f0f0f;
+          margin-left: 30px;
+
+          @include m.respond(tablet-wide) {
+            font-size: 150%;
+          }
+
+          @include m.respond(tablet-8) {
+            font-size: 150%;
+          }
+
+          @include m.respond(phone-wide) {
+            font-size: 150%;
+            margin-left: 10px;
+          }
+
+          @include m.respond(phone-small) {
+            font-size: 120%;
+          }
+        }
+        .bodyy {
+          width: 90%;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: #3d3d3d;
+          margin-left: 30px;
+          margin-top: 20px;
+          line-height: 40px;
+
+          @include m.respond(tablet-wide) {
+            width: 90%;
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          @include m.respond(tablet-8) {
+            width: 80%;
+            font-size: 10px;
+            line-height: 20px;
+          }
+          @include m.respond(phablet-max) {
+            width: 80%;
+            font-size: 12px;
+            line-height: 20px;
+          }
+
+          @include m.respond(phone-wide) {
+            display: none;
+          }
+
+          @include m.respond(phone-small) {
+            display: none;
+          }
+        }
+        .req {
+          width: 80%;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: #008080;
+          margin-left: 30px;
+          margin-top: 40px;
+
+          @include m.respond(phone-wide) {
+            width: 90%;
+            margin-left: 10px;
+            margin-top: 4%;
+            font-size: 60%;
+          }
+
+          .req1 {
+            display: flex;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: #008080;
+            align-items: center;
+
+            @include m.respond(tablet-8) {
+              font-size: 10px;
+            }
+
+            .arrow {
+              width: 15px;
+              height: 12px;
+              color: c.color(cb-green);
+              margin-left: 2px;
+
+              @include m.respond(tablet-8) {
+                width: 12px;
+                height: 10px;
+              }
+
+              @include m.respond(phablet-max) {
+                width: 12px;
+                height: 10px;
+              }
+
+              @include m.respond(phone-wide) {
+                width: 12px;
+                height: 9px;
+              }
+
+              @include m.respond(phone-small) {
+                width: 10px;
+                height: 7px;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        width: 40%;
+        display: grid;
+        grid-template-rows: 50% 50%;
+
+        @include m.respond(tablet-wide) {
+          width: 60%;
+        }
+
+        @include m.respond(phone-wide) {
+          width: 80%;
+        }
+
+        @include m.respond(phone-small) {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
 
 .productInformation {
-    width: 100%;
-    margin: 0px;
-    height: 70vh;
-    margin-top: 200px;
-    margin-bottom: 0px;
+  width: 100%;
+  margin: 0px;
+  height: 70vh;
+  margin-top: 200px;
+  margin-bottom: 0px;
 
-    @include m.respond(tablet-wide) {
-      height: 50vh;
-      margin-top: 200px;
-    }
-    @include m.respond(phablet-max) {
-      height: 250px;
-      margin-top: 100px;
-    }
-   
-      @include m.respond(phone-wide) {
-        height: 250px;
+  @include m.respond(tablet-wide) {
+    height: 50vh;
+    margin-top: 200px;
+  }
+  @include m.respond(phablet-max) {
+    height: 250px;
+    margin-top: 100px;
+  }
+
+  @include m.respond(phone-wide) {
+    height: 250px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    .title {
+      position: relative;
+      width: 100%;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 45px;
+      color: #008080;
+      margin-bottom: 20px;
+      line-height: 191.5%;
+      width: 100%;
+      text-align: center;
+
+      @include m.respond(tablet-8) {
+        font-size: 30px;
       }
 
-
-    &__wrapper{
-        position: absolute;
+      @include m.respond(phablet-max) {
         width: 100%;
-        left: 0px; 
-        .title {
-            position: relative;
-            width:100% ;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 45px;
-            color:#008080;
-            margin-bottom: 20px;
-            line-height: 191.5%;
-            width: 100%;
-            text-align: center;
+        font-size: 100%;
+        margin-bottom: 10px;
+        line-height: 90%;
+      }
 
-            
+      @include m.respond(phone-wide) {
+        width: 100%;
+        font-size: 100%;
+        margin-bottom: 10px;
+        line-height: 90%;
+      }
+      @include m.respond(phone-small) {
+        font-size: 60%;
+        height: 50%;
+        width: 100%;
+        font-size: 100%;
+        margin-bottom: 10px;
+        line-height: 90%;
+      }
+    }
+
+    .wrapper1 {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 40% 60%;
+      height: 50vh;
+
+      @include m.respond(tablet-wide) {
+        height: 70%;
+      }
+
+      @include m.respond(tablet-8) {
+        height: 80%;
+      }
+      @include m.respond(phablet-max) {
+        height: 200px;
+      }
+
+      .left {
+        display: flex;
+        flex: 1;
+        height: 50vh;
+        border-top: 2px solid #008080;
+        border-right: 2px solid #008080;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        color: #3d3d3d;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        @include m.respond(tablet-wide) {
+          font-size: 20px;
+          height: 100%;
+        }
+
+        @include m.respond(tablet-8) {
+          font-size: 18px;
+          height: 100%;
+        }
+        @include m.respond(phablet-max) {
+          font-size: 60%;
+          height: 90%;
+        }
+
+        @include m.respond(phone-wide) {
+          font-size: 60%;
+          height: 90%;
+        }
+        @include m.respond(phone-smallest) {
+          font-size: 60%;
+          height: 90%;
+        }
+
+        p {
+          margin-left: 70px;
+          line-height: 50px;
+
+          @include m.respond(tablet-8) {
+            margin-left: 10px;
+            line-height: 20px;
+          }
+          @include m.respond(phablet-max) {
+            height: 80%;
+          }
+
+          @include m.respond(phone-wide) {
+            height: 80%;
+          }
+        }
+      }
+
+      .right {
+        flex: 2;
+        border-top: 2px solid #008080;
+
+        .list {
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          margin-left: 50px;
+          margin-top: 22px;
+
+          @include m.respond(tablet-8) {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-left: 50px;
+            margin-top: 22px;
+          }
+          @include m.respond(phablet-max) {
+            justify-content: left;
+            margin-left: 10%;
+            margin-top: 2%;
+          }
+
+          @include m.respond(phone-wide) {
+            justify-content: left;
+            margin-left: 10%;
+            margin-top: 2%;
+          }
+          @include m.respond(phone-small) {
+            justify-content: left;
+            margin-left: 10%;
+            margin-top: 2%;
+          }
+
+          .ball {
+            width: 7px;
+            height: 7px;
+            border-radius: 20px;
+            background-color: #3d3d3d;
+
             @include m.respond(tablet-8) {
-                font-size: 30px;
-              }
+              width: 7px;
+              height: 7px;
+              border-radius: 50%;
+              background-color: #3d3d3d;
+            }
+            @include m.respond(phablet-max) {
+              width: 5px;
+              height: 5px;
+              border-radius: 100%;
+            }
 
-              @include m.respond(phablet-max) {
-                width: 100%;
-                font-size: 100%;
-                margin-bottom: 10px;
-                line-height: 90%;
-              }
-          
+            @include m.respond(phone-wide) {
+              width: 5px;
+              height: 5px;
+              border-radius: 100%;
+            }
+
+            @include m.respond(phone-small) {
+              width: 5px;
+              height: 5px;
+              border-radius: 100%;
+            }
+          }
+
+          p {
+            font-weight: 500;
+            font-family: 'Poppins';
+            font-size: 15px;
+            color: #3d3d3d;
+            margin-left: 10px;
+
+            @include m.respond(tablet-8) {
+              font-size: 15px;
+            }
+            @include m.respond(phablet-max) {
+              width: 100%;
+              font-size: 60%;
+              margin-left: 10px;
+            }
+
             @include m.respond(phone-wide) {
               width: 100%;
-              font-size: 100%;
-              margin-bottom: 10px;
-              line-height: 90%;
-              }
-              @include m.respond(phone-small) {
-                font-size: 60%;
-                height: 50%; width: 100%;
-                font-size: 100%;
-                margin-bottom: 10px;
-                line-height: 90%;
-              }
+              font-size: 60%;
+              margin-left: 10px;
             }
 
-
-        .wrapper1{
-            display: grid;
-            width: 100%;
-            grid-template-columns: 40% 60%;
-            height: 50vh;
-
-            @include m.respond(tablet-wide) {
-              height: 70%;
+            @include m.respond(phone-small) {
+              width: 100%;
+              font-size: 60%;
+              margin-left: 10px;
             }
+          }
+        }
+
+        .req1 {
+          display: flex;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          color: #008080;
+          align-items: center;
+          margin-left: 50px;
+          margin-top: 40px;
+
+          @include m.respond(tablet-8) {
+            font-size: 14px;
+          }
+          @include m.respond(phablet-max) {
+            font-size: 60%;
+            margin-left: 10%;
+            margin-top: 2%;
+          }
+
+          @include m.respond(phone-wide) {
+            font-size: 60%;
+            margin-left: 10%;
+            margin-top: 2%;
+          }
+
+          @include m.respond(phone-small) {
+            font-size: 60%;
+            margin-left: 10%;
+            margin-top: 2%;
+          }
+
+          .arrow {
+            width: 15px;
+            height: 12px;
+            color: c.color(cb-green);
+            margin-left: 2px;
 
             @include m.respond(tablet-8) {
-                height: 80%;
-              }
-              @include m.respond(phablet-max) {
-                height: 200px;
-              }
-            
-            
-
-
-            .left {
-                display: flex;
-                flex: 1;
-                height: 50vh;
-                border-top: 2px solid #008080;
-                border-right: 2px solid #008080;
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 25px;
-                color:#3D3D3D;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-
-                @include m.respond(tablet-wide) {
-                    font-size: 20px;
-                    height: 100%;
-                  }
-
-                @include m.respond(tablet-8) {
-                    font-size: 18px;
-                    height: 100%;
-                  }
-                  @include m.respond(phablet-max) {
-                    font-size: 60%;
-                    height: 90%;
-                  }
-              
-                @include m.respond(phone-wide) {
-                  font-size: 60%;
-                  height: 90%;
-                  }
-                  @include m.respond(phone-smallest) {
-                    font-size: 60%;
-                    height: 90%;
-                  }
-
-                p {
-                    margin-left: 70px;
-                    line-height: 50px;
-
-                    @include m.respond(tablet-8) {
-                        margin-left: 10px;
-                        line-height: 20px;
-                      }
-                      @include m.respond(phablet-max) {
-                        height: 80%;
-                      }
-                  
-                    @include m.respond(phone-wide) {
-                      height: 80%;
-                      }
-                }
+              width: 15px;
+              height: 12px;
             }
-    
-            .right {
-                flex: 2;
-                border-top: 2px solid #008080;
-
-                .list {
-                    display: flex;
-                    align-items: center;
-                    justify-content: left;
-                    margin-left: 50px;
-                    margin-top: 22px;
-
-                    @include m.respond(tablet-8) {
-                      display: flex;
-                      align-items: center;
-                      justify-content: left;
-                      margin-left: 50px;
-                      margin-top: 22px;
-                    }
-                    @include m.respond(phablet-max) {
-                      justify-content: left;
-                     margin-left: 10%;
-                     margin-top: 2%;
-                    }
-                
-                   @include m.respond(phone-wide) {
-                    justify-content: left;
-                    margin-left: 10%;
-                    margin-top: 2%;
-                    }
-                    @include m.respond(phone-small) {
-                    justify-content: left;
-                    margin-left: 10%;
-                    margin-top: 2%;
-                    }
-  
-                    
-
-                    .ball {
-                        width: 7px;
-                        height: 7px;
-                        border-radius: 20px;
-                        background-color: #3D3D3D;
-
-                        @include m.respond(tablet-8) {
-                          width: 7px;
-                          height: 7px;
-                          border-radius: 50%;
-                          background-color: #3D3D3D;
-                        }
-                        @include m.respond(phablet-max) {
-                          width: 5px;
-                          height: 5px;
-                          border-radius: 100%;
-                        }
-                    
-                        @include m.respond(phone-wide) {
-                          width: 5px;
-                          height: 5px;
-                          border-radius: 100%;
-                        }
-
-                        @include m.respond(phone-small) {
-                          width: 5px;
-                          height: 5px;
-                          border-radius: 100%;
-                        }
-                    }
-
-                    p {
-                        font-weight: 500;
-                        font-family: 'Poppins';
-                        font-size: 15px;
-                        color:#3D3D3D;
-                        margin-left: 10px;
-
-                        @include m.respond(tablet-8) {
-                          font-size: 15px;
-                        }
-                        @include m.respond(phablet-max) {
-                          width: 100%;
-                          font-size:60%;
-                          margin-left: 10px;
-                        }
-                    
-                        @include m.respond(phone-wide) {
-                          width: 100%;
-                          font-size:60%;
-                          margin-left: 10px;
-                        }
-
-                        @include m.respond(phone-small) {
-                          width: 100%;
-                          font-size:60%;
-                          margin-left: 10px;
-                        }
-                    }
-                }
-
-                .req1 {
-                    display: flex;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    color: #008080;
-                    align-items: center;
-                    margin-left: 50px;
-                    margin-top: 40px;
-
-                    @include m.respond(tablet-8) {
-                      font-size: 14px;
-                    }
-                    @include m.respond(phablet-max) {
-                      font-size: 60%;
-                      margin-left: 10%;
-                      margin-top: 2%;
-                    }
-                
-                    @include m.respond(phone-wide) {
-                      font-size: 60%;
-                      margin-left: 10%;
-                      margin-top: 2%;
-                    }
-
-                    @include m.respond(phone-small) {
-                      font-size: 60%;
-                      margin-left: 10%;
-                      margin-top: 2%;
-                    }
-
-                   .arrow{
-                      width: 15px;
-                      height: 12px;
-                      color: c.color(cb-green);
-                      margin-left: 2px;
-                      
-                      @include m.respond(tablet-8) {
-                        width: 15px;
-                        height: 12px;
-                      }
-                      @include m.respond(phablet-max) {
-                        width: 13px;
-                        height: 10px;
-                      }
-                  
-                      @include m.respond(phone-wide) {
-                        width: 12px;
-                        height: 9px;
-                      }
-  
-                      @include m.respond(phone-small) {
-                        width: 10px;
-                        height: 7px;
-                      }
-  
-                    }
-                }
+            @include m.respond(phablet-max) {
+              width: 13px;
+              height: 10px;
             }
+
+            @include m.respond(phone-wide) {
+              width: 12px;
+              height: 9px;
+            }
+
+            @include m.respond(phone-small) {
+              width: 10px;
+              height: 7px;
+            }
+          }
         }
+      }
     }
+  }
 }
 
 .whybecomean {
-    width: 100%;
-    height: 120vh;
-    margin-bottom: 0px;
+  width: 100%;
+  height: 120vh;
+  margin-bottom: 0px;
+
+  @include m.respond(tablet-wide) {
+    height: 450px;
+  }
+  @include m.respond(phablet-max) {
+    height: 350px;
+  }
+
+  @include m.respond(phone-wide) {
+    height: 300px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    width: 98%;
+    margin-top: 380px;
+    margin-bottom: 100px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include m.respond(tablet-wide) {
-      height: 450px;
+      margin-top: 100px;
     }
+
+    @include m.respond(phablet-max) {
+      margin-top: 50px;
+    }
+    @include m.respond(phone-wide) {
+      margin-top: 50px;
+    }
+
+    .title1 {
+      position: relative;
+      width: 90%;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 45px;
+      color: #008080;
+      margin-bottom: 20px;
+      line-height: 191.5%;
+      text-align: center;
+
+      @include m.respond(tablet-wide) {
+        width: 95%;
+        font-size: 180%;
+        margin-bottom: 10px;
+        line-height: 90%;
+      }
+
+      @include m.respond(tablet-8) {
+        width: 95%;
+        font-size: 150%;
+        margin-bottom: 10px;
+        line-height: 90%;
+      }
+
       @include m.respond(phablet-max) {
-        height: 350px;
-        }
-
-      @include m.respond(phone-wide) {
-        height: 300px;
-        }
-
-
-    &__wrapper{
-        position: absolute;
-        width: 98%;
-        margin-top: 380px;
-        margin-bottom: 100px;
-        left: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-        @include m.respond(tablet-wide) {
-          margin-top: 100px;
-        }
-
-          @include m.respond(phablet-max) {
-            margin-top: 50px;
-            }
-          @include m.respond(phone-wide) {
-            margin-top: 50px;
-            }
-          
-        .title1 {
-            position: relative;
-            width: 90% ;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 45px;
-            color:#008080;
-            margin-bottom: 20px;
-            line-height: 191.5%;
-            text-align: center;
-
-            @include m.respond(tablet-wide) {
-                width: 95%;
-                font-size: 180%;
-                margin-bottom: 10px;
-                line-height: 90%;
-            }
-
-            @include m.respond(tablet-8) {
-                width: 95%;
-                font-size: 150%;
-                margin-bottom: 10px;
-                line-height: 90%;
-              }
-
-              @include m.respond(phablet-max) {
-                width: 95%;
-                font-size: 100%;
-              }
-        }
+        width: 95%;
+        font-size: 100%;
+      }
     }
-        
-
+  }
 }

@@ -1,5 +1,5 @@
 export const socials = {
-    facebook: "",
-    instagram: "",
-    twitter: "",
-}
+  facebook: '',
+  instagram: '',
+  twitter: '',
+};

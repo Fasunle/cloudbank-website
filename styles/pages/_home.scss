@@ -65,7 +65,6 @@
   }
 }
 
-
 // One Platform Section
 .one-platform {
   position: relative;
@@ -105,7 +104,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 89%;
     right: 18.8%;
@@ -114,7 +113,7 @@
     background-color: #ccccff;
   }
 
-   &__heading {
+  &__heading {
     text-align: center;
     @extend .heading-4;
     margin-bottom: 73px;
@@ -131,42 +130,39 @@
       margin: 0 auto 30px;
       padding: 0 20px;
     }
+  }
 
-   }
+  &__body {
+    display: flex;
+    justify-content: center;
+  }
 
-   &__body {
-     display: flex;
-     justify-content: center;
-   }
+  &__main {
+    display: flex;
+  }
 
-   &__main {
-     display: flex;
-   }
+  &__left,
+  &__right {
+    margin-top: 20px;
+  }
 
-   &__left,
-   &__right {
-     margin-top: 20px;
-   }
+  &__left {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
-   &__left {
-     margin-right: 30px;
-     display: flex;
-     justify-content: space-between;
-     flex-direction: column;
+    @include m.respond(desktop) {
+      margin-right: 0;
+    }
 
-     @include m.respond(desktop) {
-        margin-right: 0;
-      }
+    @include m.respond(tablet-8) {
+      width: 33.3333%;
+      display: block;
+    }
+  }
 
-      @include m.respond(tablet-8) {
-        width: 33.3333%;
-        display: block;
-      }
-
-      
-   }
-
-   &__right {
+  &__right {
     margin-left: 30px;
     display: flex;
     justify-content: space-between;
@@ -182,54 +178,52 @@
     }
   }
 
-   &__feature {
-     &.left {
-       width: 210px;
+  &__feature {
+    &.left {
+      width: 210px;
 
-       @include m.respond(desktop) {
-          width: 230px;
-        }
+      @include m.respond(desktop) {
+        width: 230px;
+      }
 
-        @include m.respond(tablet-8) {
-          width: 212px;
-        }
+      @include m.respond(tablet-8) {
+        width: 212px;
+      }
 
-        @include m.respond(tablet-8) {
-          width: unset;
-        }
-     }
+      @include m.respond(tablet-8) {
+        width: unset;
+      }
+    }
 
-     &.right {
-       width: 274px;
-       @include m.respond(desktop) {
-          width: 230px;
-        }
+    &.right {
+      width: 274px;
+      @include m.respond(desktop) {
+        width: 230px;
+      }
 
-        @include m.respond(tablet-8) {
-          width: 212px;
-        }
+      @include m.respond(tablet-8) {
+        width: 212px;
+      }
 
-        @include m.respond(tablet-8) {
-          width: unset;
-        }
+      @include m.respond(tablet-8) {
+        width: unset;
+      }
+    }
 
-        
-     }
+    &.bottom {
+      margin-bottom: 80px;
 
-     &.bottom {
-       margin-bottom: 80px;
+      @include m.respond(tablet-8) {
+        margin-top: 70px;
+        margin-bottom: 0;
+      }
 
-       @include m.respond(tablet-8) {
-          margin-top: 70px;
-          margin-bottom: 0;
-        }
+      @include m.respond(tablet-small) {
+        margin-top: 130px;
+      }
+    }
 
-        @include m.respond(tablet-small) {
-          margin-top: 130px;
-        }
-     }
-
-     &-icon {
+    &-icon {
       @include m.equalSize(50px);
       @include m.radius;
       background-color: c.color(cb-green-200);
@@ -259,42 +253,40 @@
         margin-left: auto;
       }
 
-       &-wrapper {
-         width: 177px;
-         margin-bottom: 15px;
+      &-wrapper {
+        width: 177px;
+        margin-bottom: 15px;
 
-         @include m.respond(desktop) {
-            width: unset
-          }
-       }
-     }
-
-     &-heading {
-       @include m.font(24px, 600, 120%);
-       margin-bottom: 15px;
-
-       @include m.respond(tablet-8) {
-          margin-bottom: 0;
+        @include m.respond(desktop) {
+          width: unset;
         }
+      }
+    }
 
-        @include m.respond(tablet) {
-          font-size: 18px;
-        }
+    &-heading {
+      @include m.font(24px, 600, 120%);
+      margin-bottom: 15px;
 
-        @include m.respond(tablet-small) {
-          font-size: 12px;
-        }
+      @include m.respond(tablet-8) {
+        margin-bottom: 0;
+      }
 
-        
+      @include m.respond(tablet) {
+        font-size: 18px;
+      }
 
-       &.left {
+      @include m.respond(tablet-small) {
+        font-size: 12px;
+      }
+
+      &.left {
         @include m.respond(desktop) {
           text-align: right;
         }
-       }
-     }
+      }
+    }
 
-     &-text {
+    &-text {
       @include m.respond(tablet) {
         font-size: 14px;
       }
@@ -306,22 +298,19 @@
         @include m.respond(desktop) {
           text-align: right;
         }
-       }
-     }
-   }
+      }
+    }
+  }
 }
 
-
 // Mobile Banking Section
-.mobile-banking { 
+.mobile-banking {
   margin-top: 100px;
   @include m.flex-config(space-between, center, false, false);
 
   @include m.respond(tablet-small) {
     display: block;
   }
-
-  
 
   &__content {
     max-width: 395px;
@@ -364,7 +353,6 @@
     margin-bottom: 40px;
   }
 }
-
 
 // Keeping Money Safe is our priority
 .priority {
@@ -434,7 +422,6 @@
         width: unset;
         font-size: 10px;
       }
-      
     }
 
     &.first {
@@ -599,7 +586,6 @@
   }
 }
 
-
 // Users' Testimonies
 .testimonies {
   margin-top: 200px;
@@ -639,7 +625,7 @@
     position: absolute;
     opacity: 0;
     // visibility: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
     left: 0;
     top: 0;
     @include m.equalSize(100%);
@@ -690,7 +676,6 @@
     @include m.flex-config(center, center, false, false);
   }
 
-
   &__step {
     @include m.equalSize(10px);
     @include m.radius(100%);
@@ -699,7 +684,7 @@
     border: none;
 
     &.current {
-      background-color:  #489494;
+      background-color: #489494;
     }
 
     &-wrapper {
@@ -707,9 +692,7 @@
       @include m.flex-config(space-between, center, false, false);
     }
   }
-
 }
-
 
 // Partners
 .partners {
@@ -758,7 +741,7 @@
     @include m.respond(desktop) {
       padding: 16px 20px;
     }
-  
+
     @include m.respond(tablet-small) {
       padding: 25px 20px;
     }
@@ -774,7 +757,7 @@
     @include m.respond(tablet-8) {
       padding: 25px 55px;
     }
-  
+
     @include m.respond(tablet-small) {
       padding: 40px 20px;
     }

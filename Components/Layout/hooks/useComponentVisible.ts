@@ -1,10 +1,9 @@
-"use client";
+'use client';
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from 'react';
 
 export default function useComponentVisible(initialIsVisible: boolean) {
-  const [isComponentVisible, setIsComponentVisible] =
-    useState(initialIsVisible);
+  const [isComponentVisible, setIsComponentVisible] = useState(initialIsVisible);
   const ref = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: any) => {
@@ -14,10 +13,10 @@ export default function useComponentVisible(initialIsVisible: boolean) {
   };
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true);
+    document.addEventListener('click', handleClickOutside, true);
 
     return () => {
-      document.removeEventListener("click", handleClickOutside, true);
+      document.removeEventListener('click', handleClickOutside, true);
     };
   });
 

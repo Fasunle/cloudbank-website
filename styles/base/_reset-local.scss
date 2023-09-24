@@ -3,8 +3,8 @@ body {
   min-width: 320px;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -27,19 +27,26 @@ figure {
   margin: 0;
 }
 
-input::-moz-focus-inner  {
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
   margin: 0;
 }
 
-ul,  ol,  dd {
+ul,
+ol,
+dd {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-h1,  h2,  h3,  h4,  h5,  h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
@@ -49,7 +56,7 @@ p {
   margin: 0;
 }
 
-cite  {
+cite {
   font-style: normal;
 }
 
@@ -61,7 +68,7 @@ fieldset {
 
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,

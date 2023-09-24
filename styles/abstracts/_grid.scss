@@ -4,632 +4,611 @@
 @use '../base/typography';
 
 .wrapper12 {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 60px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 60px;
+
+  @include m.respond(tablet-8) {
+    margin-top: 30px;
+  }
+
+  @include m.respond(phablet-max) {
+    margin-top: 30px;
+  }
+  @include m.respond(phone-small) {
+    margin-left: 10px;
+  }
+
+  .box {
+    width: 250px;
+    margin-left: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0f0f0f;
+    align-items: center;
 
     @include m.respond(tablet-8) {
-        margin-top: 30px;
-      }
-    
-      @include m.respond(phablet-max) {
-        margin-top: 30px;
-
-      }
-      @include m.respond(phone-small) {
-        margin-left: 10px;
-      }
-  
-    .box {
-        width: 250px;
-        margin-left: 20px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        color: #0F0F0F;
-        align-items: center;
-
-        @include m.respond(tablet-8) {
-            width: 90px;
-          }
-
-          @include m.respond(phablet-max) {
-            width: 80%;
-            margin-left: 15px;
-          }
-      
-          @include m.respond(phone-wide) {
-            margin-left: 10px;
-          }
-    
-          @include m.respond(phone-small) {
-            margin-left: 8px;
-          }
-
-          p {
-            @include m.respond(tablet-8) {
-                font-size: 10px;
-              }
-              @include m.respond(phablet-max) {
-                font-size: 8px;
-              }
-          
-              @include m.respond(phone-wide) {
-                font-size: 8px;
-              }
-        
-              @include m.respond(phone-small) {
-                font-size: 8px;
-              }
-          }
-    
-        .bar{
-            display: flex;
-            width: 50px;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 50px;
-            background-color: rgba(77, 182, 172, 0.8);
-
-            @include m.respond(tablet-8) {
-                width: 25px;
-                height: 25px;
-                margin-bottom: 10px;
-              }
-          
-
-         .imag {
-           
-            width: 25px;
-            height: 25px;
-
-            @include m.respond(tablet-8) {
-                width: 10px;
-                height: 10px;
-              }
-            
-         }
-
-        }
-        .bar1{
-            display: flex;
-            width: 50px;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 50px;
-            background-color: #EA7484;
-
-            @include m.respond(tablet-8) {
-                width: 25px;
-                height: 25px;
-                margin-bottom: 10px;
-              }
-
-         .imag1 {
-           
-            width: 25px;
-            height: 25px;
-            filter: invert(1);
-
-            @include m.respond(tablet-8) {
-                width: 10px;
-                height: 10px;
-              }
-            
-         }
-
-        }
-        .bar2{
-            display: flex;
-            width: 50px;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 50px;
-            background-color: #B888F8;
-
-            @include m.respond(tablet-8) {
-                width: 25px;
-                height: 25px;
-                margin-bottom: 10px;
-              }
-
-
-         .imag2 {
-           
-            width: 25px;
-            height: 25px;
-            filter: invert(1);
-            
-            @include m.respond(tablet-8) {
-                width: 10px;
-                height: 10px;
-              }
-         }
-
-        }
-        .bar3{
-            display: flex;
-            width: 50px;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 50px;
-            background-color: #ED9553;
-
-            @include m.respond(tablet-8) {
-                width: 25px;
-                height: 25px;
-                margin-bottom: 10px;
-              }
-         .imag3 {
-           
-            width: 25px;
-            height: 25px;
-
-            @include m.respond(tablet-8) {
-                width: 10px;
-                height: 10px;
-              }
-            
-         }
-
-        }
-        
-        .title{
-         font-weight: 600;
-
-         @include m.respond(tablet-8) {
-            font-size: 10px;
-          }
-        }
-        
-        .brall {
-         width: 50px;
-         height: 3px;
-         margin-top: 20px;
-         margin-bottom: 20px;
-         background-color: rgba(77, 182, 172, 0.8);
-         border-radius: 50px;
-
-         @include m.respond(tablet-8) {
-            margin-bottom: 10px;
-          }
-
-        }
-
-        .brall1 {
-            width: 50px;
-            height: 3px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color: #EA7484;
-            border-radius: 50px;
-
-            @include m.respond(tablet-8) {
-                margin-bottom: 10px;
-              }
-           }
-
-        .brall2 {
-            width: 50px;
-            height: 3px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color: #B888F8;
-            border-radius: 50px;
-
-            @include m.respond(tablet-8) {
-                margin-bottom: 10px;
-              }
-           }
-        
-        .brall3 {
-            width: 50px;
-            height: 3px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color: #ED9553;
-            border-radius: 50px;
-
-            @include m.respond(tablet-8) {
-                margin-bottom: 10px;
-              }
-        }
-    }
-}
-
-.wrapper3 {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    @media screen and (min-width: 1601px) {
-      margin: 0% 20%;
-      width: 60%;
+      width: 90px;
     }
 
     @include m.respond(phablet-max) {
-      display: flex;
-      flex-direction: row;
-      width: 95%;
-      justify-content: center;
+      width: 80%;
+      margin-left: 15px;
     }
-    
-     @include m.respond(phone-wide) {
-      display: flex;
-      flex-direction: row;
-      width: 95%;
-      justify-content: center;
+
+    @include m.respond(phone-wide) {
+      margin-left: 10px;
+    }
+
+    @include m.respond(phone-small) {
+      margin-left: 8px;
+    }
+
+    p {
+      @include m.respond(tablet-8) {
+        font-size: 10px;
+      }
+      @include m.respond(phablet-max) {
+        font-size: 8px;
       }
 
-    .toprow {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        margin: 0px 40px;
+      @include m.respond(phone-wide) {
+        font-size: 8px;
+      }
+
+      @include m.respond(phone-small) {
+        font-size: 8px;
+      }
+    }
+
+    .bar {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 50px;
+      background-color: rgba(77, 182, 172, 0.8);
+
+      @include m.respond(tablet-8) {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+      }
+
+      .imag {
+        width: 25px;
+        height: 25px;
 
         @include m.respond(tablet-8) {
-          display: grid;
-          grid-template-columns: 33% 33% 33%;
-           margin: 5px;
-          }
-          @include m.respond(phablet-max) {
-            width: 50%;
-           display: flex;
-           flex-direction: column;
-           margin: 5px;
-          }
-        @include m.respond(phablet) {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          margin: 5px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+    .bar1 {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 50px;
+      background-color: #ea7484;
+
+      @include m.respond(tablet-8) {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+      }
+
+      .imag1 {
+        width: 25px;
+        height: 25px;
+        filter: invert(1);
+
+        @include m.respond(tablet-8) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+    .bar2 {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 50px;
+      background-color: #b888f8;
+
+      @include m.respond(tablet-8) {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+      }
+
+      .imag2 {
+        width: 25px;
+        height: 25px;
+        filter: invert(1);
+
+        @include m.respond(tablet-8) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+    .bar3 {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 50px;
+      background-color: #ed9553;
+
+      @include m.respond(tablet-8) {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+      }
+      .imag3 {
+        width: 25px;
+        height: 25px;
+
+        @include m.respond(tablet-8) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    .title {
+      font-weight: 600;
+
+      @include m.respond(tablet-8) {
+        font-size: 10px;
+      }
+    }
+
+    .brall {
+      width: 50px;
+      height: 3px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: rgba(77, 182, 172, 0.8);
+      border-radius: 50px;
+
+      @include m.respond(tablet-8) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .brall1 {
+      width: 50px;
+      height: 3px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #ea7484;
+      border-radius: 50px;
+
+      @include m.respond(tablet-8) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .brall2 {
+      width: 50px;
+      height: 3px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #b888f8;
+      border-radius: 50px;
+
+      @include m.respond(tablet-8) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .brall3 {
+      width: 50px;
+      height: 3px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #ed9553;
+      border-radius: 50px;
+
+      @include m.respond(tablet-8) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.wrapper3 {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 1601px) {
+    margin: 0% 20%;
+    width: 60%;
+  }
+
+  @include m.respond(phablet-max) {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: center;
+  }
+
+  @include m.respond(phone-wide) {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: center;
+  }
+
+  .toprow {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0px 40px;
+
+    @include m.respond(tablet-8) {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      margin: 5px;
+    }
+    @include m.respond(phablet-max) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+    @include m.respond(phablet) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+    @include m.respond(phone-wide) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+    @include m.respond(phone-small) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+
+    .reasons {
+      display: grid;
+      grid-template-columns: 20% 80%;
+
+      @include m.respond(phone-wide) {
+        width: 100%;
+        height: fit-content;
+        margin-left: 5px;
+      }
+      @include m.respond(phone-small) {
+        width: 100%;
+        height: fit-content;
+        margin-left: 5px;
+      }
+
+      .reasonum {
+        width: 50px;
+        height: 50px;
+        background-color: #3d3d3d;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        @include m.respond(tablet-8) {
+          font-size: 20px;
+          width: 29px;
+          height: 29px;
+          margin-left: 5px;
+        }
+        @include m.respond(phone-small) {
+          font-size: 15px;
+          width: 80%;
+          height: 24px;
+          margin-left: 3px;
+        }
+      }
+
+      .para {
+        width: 280px;
+
+        @include m.respond(desktop-small) {
+          width: 200px;
+        }
+
+        @include m.respond(tablet-wide) {
+          width: 190px;
+        }
+
+        @include m.respond(tablet-8) {
+          width: 160px;
+        }
+        @include m.respond(phone-small) {
+          width: 75%;
+        }
+
+        .title {
+          color: #3d3d3d;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+
+          @include m.respond(tablet-8) {
+            font-size: 15px;
+            margin-left: 3px;
           }
           @include m.respond(phone-wide) {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            margin: 5px;
-            }
-          @include m.respond(phone-small) {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            margin: 5px;
+            font-size: 14px;
+            margin-left: 2px;
+            margin-bottom: 0px;
           }
-          
-        .reasons {
-            display: grid;
-            grid-template-columns: 20% 80% ;
-
-            @include m.respond(phone-wide) {
-              width: 100%;
-              height: fit-content;
-              margin-left: 5px;
-            }
-            @include m.respond(phone-small) {
-              width: 100%;
-              height: fit-content;
-              margin-left: 5px;
-            }
-
-
-            .reasonum {
-                width: 50px;
-                height: 50px;
-                background-color: #3D3D3D;
-                border-radius: 5px;
-                color: white ;
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 30px;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-
-                @include m.respond(tablet-8) {
-                  font-size: 20px;
-                  width: 29px;
-                  height: 29px;
-                  margin-left: 5px;
-                }
-                @include m.respond(phone-small) {
-                  font-size: 15px;
-                  width: 80%;
-                  height: 24px;
-                  margin-left: 3px;
-                }
-            }
-
-            .para {
-              width: 280px;
-
-              @include m.respond(desktop-small) {
-                width: 200px;
-              }
-
-              @include m.respond(tablet-wide) {
-                width: 190px;
-              }
-
-              @include m.respond(tablet-8) {
-                  width: 160px;
-                }
-                @include m.respond(phone-small) {
-                  width: 75%;
-                }
-
-                .title {
-                    color: #3D3D3D;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 22px;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 10px;
-                    
-                    @include m.respond(tablet-8) {
-                      font-size: 15px;
-                      margin-left: 3px;
-                  }
-                  @include m.respond(phone-wide) {
-                    font-size: 14px;
-                    margin-left: 2px;
-                    margin-bottom: 0px;
-                  }
-                  @include m.respond(phone-small) {
-                    width: 100%;
-                    font-size: 60%;
-                    margin-bottom: 0px;
-                  }
-                }
-                .boddy {
-                    color: #3D3D3D;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 15px;
-                    justify-content: center;
-                    align-items: center;
-
-                    @include m.respond(tablet-wide) {
-                      width: 200px;
-                    }
-
-                    @include m.respond(tablet-8) {
-                        font-size: 12px;
-                        width: 170px;
-                        margin-top: 2px;
-                    }
-                    @include m.respond(phone-small) {
-                      width: 100%;
-                      font-size: 50%;
-                    }
-                }
-            }
+          @include m.respond(phone-small) {
+            width: 100%;
+            font-size: 60%;
+            margin-bottom: 0px;
+          }
         }
+        .boddy {
+          color: #3d3d3d;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          justify-content: center;
+          align-items: center;
+
+          @include m.respond(tablet-wide) {
+            width: 200px;
+          }
+
+          @include m.respond(tablet-8) {
+            font-size: 12px;
+            width: 170px;
+            margin-top: 2px;
+          }
+          @include m.respond(phone-small) {
+            width: 100%;
+            font-size: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomrow {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0px 40px;
+
+    @include m.respond(tablet-8) {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      margin: 5px;
+    }
+    @include m.respond(phablet-max) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+    @include m.respond(phablet) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+    @include m.respond(phone-wide) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+    @include m.respond(phone-small) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 2px;
     }
 
-    .bottomrow {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        margin: 0px 40px;
+    .reasons {
+      display: grid;
+      grid-template-columns: 20% 80%;
+
+      @include m.respond(phone-wide) {
+        width: 100%;
+        height: fit-content;
+        margin-left: 5px;
+      }
+      @include m.respond(phone-small) {
+        width: 100%;
+        height: fit-content;
+        margin-left: 5px;
+      }
+
+      .reasonum {
+        width: 50px;
+        height: 50px;
+        background-color: #3d3d3d;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
 
         @include m.respond(tablet-8) {
-          display: grid;
-          grid-template-columns: 33% 33% 33%;
-           margin: 5px;
-          }
-          @include m.respond(phablet-max) {
-            width: 50%;
-           display: flex;
-           flex-direction: column;
-           margin: 5px;
-          }
-          @include m.respond(phablet) {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            margin: 5px;
-            }
-        @include m.respond(phone-wide) {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          margin: 5px;
-          }
+          font-size: 20px;
+          width: 29px;
+          height: 29px;
+          margin-left: 5px;
+        }
+
         @include m.respond(phone-small) {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          margin: 2px;
+          font-size: 15px;
+          width: 80%;
+          height: 24px;
+          margin-left: 3px;
         }
-          
+      }
 
-        .reasons {
-            display: grid;
-            grid-template-columns: 20% 80% ;
+      .para {
+        width: 280px;
 
-            @include m.respond(phone-wide) {
-              width: 100%;
-              height: fit-content;
-              margin-left: 5px;
-            }
-           @include m.respond(phone-small) {
-              width: 100%;
-              height: fit-content;
-              margin-left: 5px;
-            }
-
-            
-
-                .reasonum {
-                    width: 50px;
-                    height: 50px;
-                    background-color: #3D3D3D;
-                    border-radius: 5px;
-                    color: white ;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 30px;
-                    text-align: center;
-                    justify-content: center;
-                    align-items: center;
-
-                    @include m.respond(tablet-8) {
-                        font-size: 20px;
-                        width: 29px;
-                        height: 29px;
-                        margin-left: 5px;
-                      }
-                    
-                      @include m.respond(phone-small) {
-                        font-size: 15px;
-                        width: 80%;
-                        height: 24px;
-                        margin-left: 3px;
-                      }
-                      
-                }
-                
-                    .para {
-                      width: 280px;
-        
-                      @include m.respond(desktop-small) {
-                        width: 200px;
-                      }
-        
-                      @include m.respond(tablet-wide) {
-                        width: 190px;
-                      }
-        
-                      @include m.respond(tablet-8) {
-                          width: 160px;
-                        }
-                        @include m.respond(phone-small) {
-                          width: 75%;
-                        }
-    
-                    .title {
-                        color: #3D3D3D;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 22px;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 10px;
-
-                        @include m.respond(tablet-8) {
-                            font-size: 15px;
-                            margin-left: 3px;
-                        }
-                        @include m.respond(phone-wide) {
-                          font-size: 14px;
-                          margin-left: 2px;
-                          margin-bottom: 0px;
-                        }
-                        @include m.respond(phone-small) {
-                          width: 100%;
-                          font-size: 60%;
-                          margin-bottom: 0px;
-                        }
-                    }
-                    .boddy {
-                        width: 300px;
-                        color: #3D3D3D;
-                        font-family: 'Poppins';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 15px;
-                        justify-content: center;
-                        align-items: center;
-
-                        @include m.respond(tablet-wide) {
-                          width: 200px;
-                        }
-
-                        @include m.respond(tablet-8) {
-                            font-size: 12px;
-                            width: 170px;
-                            margin-top: 2px;
-                        }
-                        @include m.respond(phone-small) {
-                          width: 100%;
-                          font-size: 50%;
-                        }
-                    }
-                }
+        @include m.respond(desktop-small) {
+          width: 200px;
         }
 
-        .req1 {
-            display: flex;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 500;
+        @include m.respond(tablet-wide) {
+          width: 190px;
+        }
+
+        @include m.respond(tablet-8) {
+          width: 160px;
+        }
+        @include m.respond(phone-small) {
+          width: 75%;
+        }
+
+        .title {
+          color: #3d3d3d;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+
+          @include m.respond(tablet-8) {
+            font-size: 15px;
+            margin-left: 3px;
+          }
+          @include m.respond(phone-wide) {
             font-size: 14px;
-            color: #008080;
-            align-items: center;
-            margin-left: 50px;
-            margin-top: 40px;
-
-            @include m.respond(tablet-8) {
-                font-size: 12px;
-                width: 100px;
-                margin-top: 5px;
-              }
-              @include m.respond(phablet) {
-                font-size: 10px;
-                width: 100%;
-                margin-top: 10px;
-                }
-              @include m.respond(phone-wide) {
-                width: 100%;
-                font-size: 70%;
-                margin-top: 15%;
-                margin-left: 10%;
-              }
-              @include m.respond(phone-small) {
-                width: 100%;
-                font-size: 50%;
-              }
-             
-
-           .arrow{
-              width: 15px;
-              height: 12px;
-              color: c.color(cb-green);
-              margin-left: 2px;
-
-              @include m.respond(tablet-8) {
-                width: 12px;
-                height: 10px;
-              }
-              @include m.respond(phablet) {
-                width: 10px;
-                height: 10px;
-                }
-            }
+            margin-left: 2px;
+            margin-bottom: 0px;
+          }
+          @include m.respond(phone-small) {
+            width: 100%;
+            font-size: 60%;
+            margin-bottom: 0px;
+          }
         }
+        .boddy {
+          width: 300px;
+          color: #3d3d3d;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          justify-content: center;
+          align-items: center;
+
+          @include m.respond(tablet-wide) {
+            width: 200px;
+          }
+
+          @include m.respond(tablet-8) {
+            font-size: 12px;
+            width: 170px;
+            margin-top: 2px;
+          }
+          @include m.respond(phone-small) {
+            width: 100%;
+            font-size: 50%;
+          }
+        }
+      }
     }
+
+    .req1 {
+      display: flex;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #008080;
+      align-items: center;
+      margin-left: 50px;
+      margin-top: 40px;
+
+      @include m.respond(tablet-8) {
+        font-size: 12px;
+        width: 100px;
+        margin-top: 5px;
+      }
+      @include m.respond(phablet) {
+        font-size: 10px;
+        width: 100%;
+        margin-top: 10px;
+      }
+      @include m.respond(phone-wide) {
+        width: 100%;
+        font-size: 70%;
+        margin-top: 15%;
+        margin-left: 10%;
+      }
+      @include m.respond(phone-small) {
+        width: 100%;
+        font-size: 50%;
+      }
+
+      .arrow {
+        width: 15px;
+        height: 12px;
+        color: c.color(cb-green);
+        margin-left: 2px;
+
+        @include m.respond(tablet-8) {
+          width: 12px;
+          height: 10px;
+        }
+        @include m.respond(phablet) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
 }

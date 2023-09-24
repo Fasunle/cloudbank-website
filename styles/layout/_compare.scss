@@ -1,4 +1,4 @@
-@use "../abstracts/colors" as c;
+@use '../abstracts/colors' as c;
 
 .compare-container {
   display: flex;
@@ -67,7 +67,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .compare-container{
+  .compare-container {
     display: none;
   }
 }
