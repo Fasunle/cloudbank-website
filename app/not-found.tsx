@@ -4,7 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import SEO from '@/Components/Seo';
-import { useRouter } from 'next/router';
+
+// https://stackoverflow.com/questions/74421327/nextrouter-was-not-mounted-next-js
+import { useRouter } from 'next/navigation';
 
 const NotFoundPage = () => {
   const router = useRouter();
@@ -31,20 +33,18 @@ const NotFoundPage = () => {
           </p>
 
           <div className='flex justify-center items-center'>
-            <div className='block xs:flex items-center xs:justify-between w-[330px] mx-auto'>
+            <div className='block xs:flex xs:column items-center xs:justify-between w-[330px] mx-auto'>
               <button
-                className='w-[130px] h-14 border border-solid border-cb-green rounded-[5px] bg-white flex items-center text-center justify-center text-main font-bold text-base leading-[1.1] p-2 flex-grow-0 flex-shrink-0 mb-5 xs:mb-0 xs-max:mx-auto'
+                className='relative w-[130px] h-14 border border-solid border-cb-green rounded-[5px] bg-white flex items-center text-center justify-center text-main font-bold text-base leading-[1.1] p-2 flex-grow-0 flex-shrink-0 mb-5 xs:mb-0 xs-max:mx-auto'
                 onClick={() => router.back()}
               >
-                <span>
-                  <Image
-                    alt='Binoculars'
-                    width={250}
-                    height={250}
-                    className='z-10 relative top-[-8rem]'
-                    src={'/images/back-link.svg'}
-                  />
-                </span>
+                <Image
+                  alt='back link'
+                  width={30}
+                  height={30}
+                  // className='z-10 relative top-[-8rem]'
+                  src={'/images/icons/back-link.svg'}
+                />
                 <span className='inline-block ml-[15px] text-cb-green'>Go Back</span>
               </button>
 

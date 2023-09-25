@@ -1,13 +1,12 @@
-import SEO from '@/Components/Seo';
+import BoardContent from '@/Components/Container/BoardOfTrustees';
+import FinancialFreedom from '@/Components/Container/Home/FinancialFreedom';
+import { boardOfTrustees, financialFreedom } from '@/config/constants';
 
 export default function BoardOfTrustees() {
   return (
     <>
-      <SEO title='Board of Trustees' description='Board of Trustees at Cloudbank' />
-      {/* <BoardContent />
-      <FinancialFreedom 
-        type="trustees"
-      /> */}
+      <BoardContent {...boardOfTrustees} />
+      <FinancialFreedom {...financialFreedom} type='trustees' />
     </>
   );
 }

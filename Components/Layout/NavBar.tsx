@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { config } from '@/config';
-import useComponentVisible from './hooks/useComponentVisible';
+import useComponentVisible from '../hooks/useComponentVisible';
 
 export default function Navbar() {
   const currentPathname = usePathname();

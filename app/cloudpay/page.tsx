@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 import Payments from '@/Components/Payments';
 import Superfasts from '@/Components/Superfasts';
+import FinancialFreedom from '@/Components/Container/Home/FinancialFreedom';
+import { financialFreedom } from '@/config/constants';
 
 export default function CloudpayPage() {
   return (
@@ -18,7 +20,7 @@ export default function CloudpayPage() {
         />
       </div>
       <Payments />
-      {/* <FinancialFreedom /> */}
+      <FinancialFreedom {...financialFreedom} />
     </>
   );
 }

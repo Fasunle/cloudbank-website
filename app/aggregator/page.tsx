@@ -3,6 +3,8 @@ import Become from '@/Components/Aggregator/Become';
 import Cloudwallet from '@/Components/Aggregator/Cloudwallet';
 import Questions from '@/Components/Aggregator/Questions';
 import Speed from '@/Components/Aggregator/Speed';
+import FinancialFreedom from '@/Components/Container/Home/FinancialFreedom';
+import { financialFreedom } from '@/config/constants';
 
 const aggregator = () => {
   return (
@@ -12,7 +14,7 @@ const aggregator = () => {
       <Speed />
       <AggregatorTable />
       <Questions />
-      {/* <FinancialFreedom /> */}
+      <FinancialFreedom {...financialFreedom} />
     </div>
   );
 };
