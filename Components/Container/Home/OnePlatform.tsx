@@ -1,10 +1,12 @@
+'use client';
+
 import { useRef } from 'react';
 import Image from 'next/image';
 
-import { OnePlatformPropsTypes } from '@/interfaces';
+import { OnePlatformPropsType } from '@/interfaces';
 import { useContainerDimensions } from '@/utils/useContainerDimensions';
 
-export default function OnePlatform(props: OnePlatformPropsTypes) {
+export default function OnePlatform(props: OnePlatformPropsType) {
   const containerRef = useRef<HTMLDivElement>();
   const { width } = useContainerDimensions(containerRef);
 

@@ -37,7 +37,7 @@ export default function SaveAndEarn(props: SaveAndEarnPropsTypes) {
               className='cta-playstore-md mr-2'
             >
               <Image
-                src={'/images/play-store.svg'}
+                src={'/images/icons/play-store.svg'}
                 alt='Playstore'
                 className='vector'
                 width={30}

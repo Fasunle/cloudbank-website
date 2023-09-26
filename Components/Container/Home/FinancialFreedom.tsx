@@ -39,7 +39,7 @@ export default function FinancialFreedom(props: FinancialFreedomType) {
               height={30}
               className='vector'
               alt={'Playstore'}
-              src={'/images/play-store.svg'}
+              src={'/images/icons/play-store.svg'}
             />
             <span className='text'>
               Get on <br /> <span className='store'>Google Play</span>
@@ -56,7 +56,7 @@ export default function FinancialFreedom(props: FinancialFreedomType) {
               height={30}
               className='vector'
               alt={'Applestore'}
-              src={'/images/apple-store.svg'}
+              src={'/images/icons/apple-logo.svg'}
             />
             <span className='text'>
               Get on <br /> <span className='store'>Apple Store</span>

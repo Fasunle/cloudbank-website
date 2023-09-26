@@ -2,6 +2,7 @@ import {
   BoardOfTrusteesContentPropsTypes,
   CareerIntroductionType,
   CompareItemsPropsType,
+  ComparePropsType,
   CoreValuesType,
   CurrentOpeningsPropsType,
   FaqContainerPropsType,
@@ -126,11 +127,13 @@ export const heroSectionProps: HeroSectionPropsType = {
   googlePlaystoreLink: constants.googlePlaystoreLink,
   heroImage: {
     altText: '',
-    localFile: '',
+    localFile: '/images/dashboard-on-desktop-and-account-on-mobile-screens.png',
+    mobileFile: '/images/dashboard-on-mobile.webp',
   },
-  heroPlaystoreCtaText: '',
-  heroSubtitle: '',
-  heroTitle: '',
+  heroPlaystoreCtaText: 'Get Started',
+  heroSubtitle:
+    'From Payments to POS services, Loans, Savings, Bills Payment and Business accounts, Cloudbank provides everyone with the right tools to build their financial performance.',
+  heroTitle: 'Created with your financial flexibility in mind',
   webAppLinks: constants.webAppLinks,
 };
 
@@ -316,4 +319,8 @@ export const productsMainProps: ProductsMainPropsType = {
 export const compareItemsProps: CompareItemsPropsType = {
   symbol: '',
   text: '',
+};
+
+export const compareProps: ComparePropsType = {
+  compareData: compareData,
 };

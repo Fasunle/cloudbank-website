@@ -7,9 +7,8 @@ import Navbar from '@/Components/Layout/NavBar';
 import Footer from '@/Components/Layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Home | Cloudwallet Technologies',
-  description: 'Cloudbank provides a seamless banking services',
-  icons: [{ rel: 'icon', url: '/favicon.ico' }],
+  title: 'Home',
+  description: 'Cloudbank Offers and Features',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

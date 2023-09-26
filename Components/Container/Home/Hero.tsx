@@ -18,36 +18,41 @@ export default function HeroSection(props: HeroSectionPropsType) {
       <section className='hero__content'>
         <h1 className='hero__title'>{heroTitle}</h1>
         <p className='hero__subtitle'>{heroSubtitle}</p>
-        <div className='cta-block'>
+        <div className='cta-block flex flex-col md:flex-row items-center md:items-start  gap-2 md:gap-0'>
           <Link
             href={googlePlaystoreLink}
             target='_blank'
             rel='noreferrer'
-            className='cta-playstore-lg'
+            className='cta-playstore-lg mr-0 md:mr-2'
           >
             <Image
               width={30}
               height={30}
               className='vector'
               alt={'Playstore'}
-              src={'/images/play-store.svg'}
+              src={'/images/icons/play-store.svg'}
             />
             <span className='text'>
               Get on <br /> <span className='store'>Google Play</span>
             </span>
           </Link>
-          <a href={appleStoreLink} target='_blank' rel='noreferrer' className='cta-playstore-lg'>
+          <Link
+            href={appleStoreLink}
+            target='_blank'
+            rel='noreferrer'
+            className='cta-playstore-lg mr-0 md:mr-2'
+          >
             <Image
               width={30}
               height={30}
               className='vector'
-              alt={'Playstore'}
-              src={'/images/apple-logo.svg'}
+              alt={'Applestore'}
+              src={'/images/icons/apple-logo.svg'}
             />
             <span className='text'>
               Get on <br /> <span className='store'>Apple Store</span>
             </span>
-          </a>
+          </Link>
           <Link
             href={webAppLinks.home}
             target='_blank'
@@ -59,7 +64,20 @@ export default function HeroSection(props: HeroSectionPropsType) {
         </div>
       </section>
       <div className='hero__image'>
-        <Image src={heroImage.localFile} alt={heroImage.altText} width={400} height={400} />
+        <Image
+          className='hidden md:block'
+          src={heroImage.localFile}
+          alt={heroImage.altText}
+          width={500}
+          height={500}
+        />
+        <Image
+          className='md:hidden'
+          src={heroImage.mobileFile}
+          alt={heroImage.altText}
+          width={350}
+          height={450}
+        />
       </div>
     </section>
   );

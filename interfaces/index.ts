@@ -1,4 +1,4 @@
-import { ElementType } from 'react';
+import { ElementType, ReactNode } from 'react';
 
 export type ImageType = {
   localFile: string;
@@ -72,7 +72,7 @@ export type HeroSectionPropsType = {
   heroTitle: string;
   heroSubtitle: string;
   heroPlaystoreCtaText: string;
-  heroImage: ImageType;
+  heroImage: ImageType & { mobileFile: string };
   googlePlaystoreLink: string;
   appleStoreLink: string;
   webAppLinks: {
@@ -202,4 +202,4 @@ type LinkType = {
   title: string;
 };
 
-export type CompareItemsPropsType = { symbol: string; text: string };
+export type CompareItemsPropsType = { symbol: ReactNode; text: string };
