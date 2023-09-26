@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 //
-export default function Paymentrecon() {
+export default function Patreon() {
   return (
     <section className='paymentrecon'>
       <div className='paymentrecon__wrapper'>
