@@ -162,13 +162,14 @@ export const mobileBankingProps: MobileBankingPropsType = {
 };
 
 export const moneyPriorityProps: MoneyPriorityPropsType = {
-  priorityCtaText: '',
+  priorityCtaText: 'Open an account now',
   priorityMobileImage: {
-    altText: '',
-    localFile: '',
+    altText: 'cloudbank account screen mobile',
+    localFile: '/images/cloudbank-account-screen-mobile.webp',
   },
-  priorityText: '',
-  priorityTitle: '',
+  priorityText:
+    'With the toggle button, you can keep your account balance from prying eyes etc. Beyond banking with us, Getting you the necessary security is our priority and this is what we aim at',
+  priorityTitle: 'Keeping your money safe is our priority',
   webAppLinks: constants.webAppLinks,
 };
 

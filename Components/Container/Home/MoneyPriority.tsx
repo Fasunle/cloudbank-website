@@ -21,11 +21,10 @@ export default function MoneyPriority(props: MoneyPriorityPropsType) {
         </div>
         <div className='priority__image'>
           <Image
-            width={30}
-            height={30}
+            width={214}
+            height={450}
             src={priorityMobileImage.localFile}
             alt={priorityMobileImage.altText}
-            className='priority__card-img'
           />
         </div>
         <div className='priority__card second'>
