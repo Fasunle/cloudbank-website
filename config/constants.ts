@@ -151,13 +151,13 @@ export const investmentsProps: InvestmentsPropsType = {
 };
 
 export const mobileBankingProps: MobileBankingPropsType = {
-  mobileBankingCtaText: '',
-  mobileBankingHeading: '',
+  mobileBankingCtaText: 'Open an account for free',
+  mobileBankingHeading: 'Free Mobile Banking',
   mobileBankingImage: {
-    altText: '',
-    localFile: '',
+    altText: 'Free Mobile Banking',
+    localFile: '/images/free-mobile-banking.webp',
   },
-  mobileBankingText: '',
+  mobileBankingText: 'Zero charges on transfers, card maintenance fees, online or POS transactions',
   webAppLinks: constants.webAppLinks,
 };
 
