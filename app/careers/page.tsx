@@ -6,13 +6,13 @@ import {
   coreValues,
   currentOpeningProps,
   financialFreedom,
-  introductionProps,
+  careerIntroductionProps
 } from '@/config/constants';
 
 export default function Careers() {
   return (
     <>
-      <Introduction {...introductionProps} />
+      <Introduction {...careerIntroductionProps} />
       <CoreValues {...coreValues} />
       <CurrentOpenings {...currentOpeningProps} />
       <FinancialFreedom type='careers' {...financialFreedom} />

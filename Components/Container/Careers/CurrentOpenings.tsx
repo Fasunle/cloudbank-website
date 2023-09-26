@@ -150,7 +150,7 @@ export default function CurrentOpenings(props: CurrentOpeningsPropsType) {
               height={30}
               alt=''
               className='ml-2'
-              src={'/images/filter-dropdown.svg'}
+              src={'/images/icons/filter-dropdown.svg'}
             />
 
             {isLocationDropdownVisible && (
@@ -181,7 +181,7 @@ export default function CurrentOpenings(props: CurrentOpeningsPropsType) {
               height={30}
               alt=''
               className='ml-2'
-              src={'/images/filter-dropdown.svg'}
+              src={'/images/icons/filter-dropdown.svg'}
             />
 
             {isWorkDropdownVisible && (

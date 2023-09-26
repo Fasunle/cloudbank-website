@@ -1,7 +1,9 @@
-import { IntroductionType } from '@/interfaces';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Introduction(props: IntroductionType) {
+import { CareerIntroductionType } from '@/interfaces';
+
+export default function Introduction(props: CareerIntroductionType) {
   const { careerIntroTitle, careerIntroText, viewOpeningsLinkText, viewOpeningsLinkAddress } =
     props;
 
@@ -14,15 +16,21 @@ export default function Introduction(props: IntroductionType) {
       <p className='text-lg font-poppins text-cb-black leading-[1.2] mb-10 lg:mb-[84px] text-center'>
         {careerIntroText}
       </p>
-      <a
+      <Link
         className='w-[200px] h-14 text-white font-bold bg-cb-green rounded-[5px] font-maven p-4 flex items-center justify-center'
         href={viewOpeningsLinkAddress.url}
         rel='noreferrer'
         target='_blank'
       >
         <span className='mr-[5px]'>{viewOpeningsLinkText}</span>
-        <Image width={30} height={30} alt='' className='ml-2' src={'/images/front-link.svg'} />
-      </a>
+        <Image
+          width={30}
+          height={30}
+          alt=''
+          className='ml-2'
+          src={'/images/icons/front-link.svg'}
+        />
+      </Link>
     </section>
   );
 }

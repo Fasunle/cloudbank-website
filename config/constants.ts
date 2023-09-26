@@ -26,8 +26,8 @@ export const constants = {
     home: '',
   },
   onePlatformImage: {
-    altText: '',
-    localFile: '',
+    altText: 'Dashboard Layout on Mobile Screen',
+    localFile: '/images/dashboard-on-mobile.webp',
   },
   googlePlaystoreLink: '',
   appleStoreLink: '',
@@ -46,20 +46,17 @@ export const financialFreedom: FinancialFreedomType = {
   webAppLinks: {
     home: constants.webAppLinks.home,
   },
-  onePlatformImage: {
-    altText: constants.onePlatformImage.altText,
-    localFile: constants.onePlatformImage.localFile,
-  },
+  onePlatformImage: constants.onePlatformImage,
 };
 
 export const boardOfTrustees: BoardOfTrusteesContentPropsTypes = {
   boardMemberProfile: [],
-  boardOfTrusteesTitle: '',
+  boardOfTrusteesTitle: 'Board of Trustees',
 };
 
 export const careerIntroductionProps: CareerIntroductionType = {
   careerIntroText: '',
-  careerIntroTitle: '',
+  careerIntroTitle: 'Careers',
   viewOpeningsLinkAddress: {
     url: '',
   },
@@ -76,7 +73,12 @@ export const currentOpeningProps: CurrentOpeningsPropsType = {
 };
 
 export const faqs: FaqContainerPropsType = {
-  faqFields: [],
+  faqFields: [
+    {
+      answer: 'Navigate to home page and click the get started button.',
+      question: 'How do I create an account?',
+    },
+  ],
 };
 
 export const compareData = [
@@ -183,10 +185,7 @@ export const onePlatformProps: OnePlatformPropsType = {
     text: 'Get loans with very low interest rates',
     title: 'Long-term Loans',
   },
-  onePlatformImage: {
-    altText: 'Dashboard Layout on Mobile Screen',
-    localFile: '/images/dashboard-on-mobile.webp',
-  },
+  onePlatformImage: constants.onePlatformImage,
   onePlatformTitle: 'One platform with all you need',
   transferFunds: {
     text: 'Transfer funds to anyone with a bank account',

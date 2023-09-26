@@ -54,11 +54,11 @@ export default function FaqContainer(props: FaqContainerPropsType) {
       <section className='faq__container'>
         <div className='faq__input-wrapper'>
           <Image
-            width={30}
-            height={30}
+            width={24}
+            height={24}
             alt=''
             className='faq__input-vector'
-            src={'/images/search.svg'}
+            src={'/images/icons/search.svg'}
           />
           <input
             className='faq__input'
