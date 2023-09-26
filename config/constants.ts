@@ -174,25 +174,25 @@ export const moneyPriorityProps: MoneyPriorityPropsType = {
 
 export const onePlatformProps: OnePlatformPropsType = {
   investFunds: {
-    text: '',
-    title: '',
+    text: 'Invest funds in diverse safe investments',
+    title: 'Invest Funds',
   },
   longTermLoans: {
-    text: '',
-    title: '',
+    text: 'Get loans with very low interest rates',
+    title: 'Long-term Loans',
   },
   onePlatformImage: {
-    altText: '',
-    localFile: '',
+    altText: 'Dashboard Layout on Mobile Screen',
+    localFile: '/images/dashboard-on-mobile.webp',
   },
-  onePlatformTitle: '',
+  onePlatformTitle: 'One platform with all you need',
   transferFunds: {
-    text: '',
-    title: '',
+    text: 'Transfer funds to anyone with a bank account',
+    title: 'Transfer funds',
   },
   withdrawFunds: {
-    text: '',
-    title: '',
+    text: 'Withdraw funds to bank accounts or other wallets',
+    title: 'Withdraw Funds',
   },
 };
 

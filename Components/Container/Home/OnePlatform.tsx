@@ -60,11 +60,10 @@ export default function OnePlatform(props: OnePlatformPropsType) {
             </div>
             <div className='one-platform__visual'>
               <Image
-                width={100}
-                height={100}
+                width={350}
+                height={450}
                 alt={onePlatformImage.altText}
                 src={onePlatformImage.localFile}
-                className='one-platform__feature-icon-img'
               />
             </div>
             <div className='one-platform__right'>
