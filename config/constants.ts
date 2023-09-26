@@ -139,14 +139,15 @@ export const heroSectionProps: HeroSectionPropsType = {
 
 export const investmentsProps: InvestmentsPropsType = {
   investmentCardImage: {
-    altText: '',
-    localFile: '',
+    altText: 'Grow your money',
+    localFile: '/images/flower-dollar.webp',
   },
-  investmentCardText: '',
-  investmentCardTitle: '',
-  investmentLinkText: '',
-  investmentText: '',
-  investmentTitle: '',
+  investmentCardText: 'Invest smartly. Earn up to 18% Return on investment per annum',
+  investmentCardTitle: 'Invest with Cloud Bank',
+  investmentLinkText: 'Get started for free',
+  investmentText:
+    "We've created rewarding and safe investment plans to ensure your money works just as hard as you do.  ",
+  investmentTitle: 'Investments tailored to you',
   webAppLinks: constants.webAppLinks,
 };
 
@@ -209,12 +210,13 @@ export const partnersProps: PartnersPropsType = {
 
 export const paymentsProps: PaymentsPropsType = {
   paymentImage: {
-    altText: '',
-    localFile: '',
+    altText: 'Cloudbank Cards',
+    localFile: '/images/cards.webp',
   },
-  paymentLinkText: '',
-  paymentText: '',
-  paymentTitle: '',
+  paymentLinkText: 'Open an account now',
+  paymentText:
+    'Request a Cloud bank debit card to be delivered at your convenience. Enjoy up to $3000 monthly limit on international transactions',
+  paymentTitle: 'Seamless payments everywhere you go',
   webAppLinks: constants.webAppLinks,
 };
 

@@ -28,8 +28,8 @@ export default function Investments(props: InvestmentsPropsType) {
             <p className='investment__card-text'>{investmentCardText}</p>
           </div>
           <Image
-            width={300}
-            height={300}
+            width={80}
+            height={80}
             src={investmentCardImage.localFile}
             alt={investmentCardImage.altText}
           />
