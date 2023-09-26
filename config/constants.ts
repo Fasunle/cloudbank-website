@@ -34,12 +34,12 @@ export const constants = {
 };
 
 export const financialFreedom: FinancialFreedomType = {
-  financialFreedomHeading: '',
-  financialFreedomText: '',
-  financialFreedomLinkText: '',
+  financialFreedomHeading: 'Ready for financial freedom?',
+  financialFreedomText: 'Get started with Cloud Bank today',
+  financialFreedomLinkText: 'Get Started',
   financialFreedomImage: {
-    altText: '',
-    localFile: '',
+    altText: 'Financial Freedom',
+    localFile: '/images/cloudbank-home-on-desktop-screen.webp',
   },
   googlePlaystoreLink: constants.googlePlaystoreLink,
   appleStoreLink: constants.appleStoreLink,
@@ -199,12 +199,12 @@ export const onePlatformProps: OnePlatformPropsType = {
 };
 
 export const partnersProps: PartnersPropsType = {
-  partnersHeading: '',
+  partnersHeading: 'Our partners',
   partnersLogos: {
-    partnerFour: { altText: '', localFile: '' },
-    partnerOne: { altText: '', localFile: '' },
-    partnerThree: { altText: '', localFile: '' },
-    partnerTwo: { altText: '', localFile: '' },
+    partnerFour: { altText: 'GLobal Accelerex', localFile: '/images/errandpay-logo.webp' },
+    partnerOne: { altText: 'Interswitch', localFile: '/images/interswitch-logo.webp' },
+    partnerTwo: { altText: 'Sun Trust', localFile: '/images/check.webp' },
+    partnerThree: { altText: 'GLobal Accelerex', localFile: '/images/global-accelerex-logo.webp' },
   },
 };
 
@@ -221,8 +221,18 @@ export const paymentsProps: PaymentsPropsType = {
 };
 
 export const testimoniesProps: TestimoniesPropsType = {
-  allTestimonials: [],
-  testimonialTitle: '',
+  allTestimonials: [
+    {
+      content:
+        'I use my business account to pay all my employees. I also earn monthly on my savings. It is very seamless. And I have never experienced issues.',
+      userName: 'Tolulope Oladoyin',
+      userImage: {
+        altText: "Tolulope Oladoyin's review",
+        localFile: '/images/tolulope-profile.webp',
+      },
+    },
+  ],
+  testimonialTitle: 'Our customers speak for themselves',
 };
 
 export const heroProps: HeroPropsType = {

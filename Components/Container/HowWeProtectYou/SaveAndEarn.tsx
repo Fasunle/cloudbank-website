@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { SaveAndEarnPropsTypes } from '@/interfaces';
+import { SaveAndEarnPropsType } from '@/interfaces';
 
-export default function SaveAndEarn(props: SaveAndEarnPropsTypes) {
+export default function SaveAndEarn(props: SaveAndEarnPropsType) {
   const {
     saveAndEarnHeading,
     saveAndEarnText,
@@ -43,7 +43,7 @@ export default function SaveAndEarn(props: SaveAndEarnPropsTypes) {
                 width={30}
                 height={30}
               />
-              <span className='text'>
+              <span className='hidden md:inline-block'>
                 Get on <br /> <span className='store'>Playstore</span>
               </span>
             </Link>
