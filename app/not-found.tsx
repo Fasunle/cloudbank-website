@@ -22,7 +22,7 @@ const NotFoundPage = () => {
             alt='Binoculars'
             width={250}
             height={250}
-            className='z-10 relative top-[-8rem]'
+            className='z-10 relative top-[2rem] mx-auto'
             src={'/images/binoculars.png'}
           />
           <h1 className='text-cb-black text-3xl leading-normal mb-5 font-bold'>Page not found</h1>
@@ -33,9 +33,9 @@ const NotFoundPage = () => {
           </p>
 
           <div className='flex justify-center items-center'>
-            <div className='block xs:flex xs:column items-center xs:justify-between w-[330px] mx-auto'>
+            <div className='flex gap-3 justify-between mx-auto'>
               <button
-                className='relative w-[130px] h-14 border border-solid border-cb-green rounded-[5px] bg-white flex items-center text-center justify-center text-main font-bold text-base leading-[1.1] p-2 flex-grow-0 flex-shrink-0 mb-5 xs:mb-0 xs-max:mx-auto'
+                className='h-14 border border-solid border-cb-green rounded-[5px] bg-white flex items-center text-center justify-center text-main font-bold text-base leading-[1.1] p-2 flex-grow-0 flex-shrink-0 mb-5 xs:mb-0 xs-max:mx-auto'
                 onClick={() => router.back()}
               >
                 <Image
@@ -50,7 +50,7 @@ const NotFoundPage = () => {
 
               <Link
                 href='/'
-                className='w-[170px] h-14 rounded-[5px] bg-cb-green flex items-center text-center justify-center text-white font-bold text-base leading-[1.1] p-2 flex-grow-0 flex-shrink-0 xs-max:mx-auto'
+                className='h-14 rounded-[5px] bg-cb-green flex items-center text-center justify-center text-white font-bold text-base leading-[1.1] p-2 flex-grow-0 flex-shrink-0 xs-max:mx-auto'
               >
                 Take me Home
               </Link>
