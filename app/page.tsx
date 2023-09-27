@@ -9,7 +9,6 @@ import Partners from '@/Components/Container/Home/Partners';
 import Payments from '@/Components/Container/Home/Payments';
 import Testimonies from '@/Components/Container/Home/Testimonies';
 import {
-  compareData,
   compareProps,
   financialFreedom,
   heroSectionProps,
