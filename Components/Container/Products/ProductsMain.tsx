@@ -58,15 +58,15 @@ export default function ProductsMain(props: ProductsMainPropsType) {
           )}
         </article>
 
-        <Image src={posImage.localFile} alt={posImage.altText} width={100} height={100} />
+        <Image src={posImage.localFile} alt={posImage.altText} width={500} height={400} />
       </section>
 
       <section className='flex items-center justify-between flex-col sm:flex-row mb-20 md:mb-36'>
         <Image
           src={mastercardImage.localFile}
           alt={mastercardImage.altText}
-          width={100}
-          height={100}
+          width={533}
+          height={400}
         />
 
         <article className='sm:max-w-[411px] w-full mt-[30px] sm:mt-0 ml-0 sm:ml-5'>
@@ -110,14 +110,14 @@ export default function ProductsMain(props: ProductsMainPropsType) {
           )}
         </article>
         <Image
-          width={100}
-          height={100}
+          width={209}
+          height={400}
           src={iosPlatformImage.localFile}
           alt={iosPlatformImage.altText}
         />
       </section>
 
-      <section className='flex items-center justify-between flex-col sm:flex-row mb-20 md:mb-36'>
+      {/* <section className='flex items-center justify-between flex-col sm:flex-row mb-20 md:mb-36'>
         <Image
           width={100}
           height={100}
@@ -147,7 +147,7 @@ export default function ProductsMain(props: ProductsMainPropsType) {
         </article>
       </section>
 
-      <section className='flex items-center justify-between flex-col-reverse sm:flex-row'>
+       <section className='flex items-center justify-between flex-col-reverse sm:flex-row'>
         <article className='sm:max-w-[367px] w-full mt-[30px] sm:mt-0 mr-0 sm:mr-5'>
           <h2 className='font-bold text-xl md:text-2xl lg:text-3xl leading-normal md:leading-normal lg:leading-normal mb-[30px]'>
             {overdraftTitle}
@@ -172,7 +172,7 @@ export default function ProductsMain(props: ProductsMainPropsType) {
           src={overdraftImage.localFile}
           alt={overdraftImage.altText}
         />
-      </section>
+      </section> */}
     </div>
   );
 }

@@ -149,6 +149,7 @@ export type HeroPropsType = {
   webAppLinks: WebAppLinksType;
   companyDetails: string;
   mastercardImage: ImageType;
+  companyImage: ImageType;
 };
 
 export type SaveAndEarnPropsType = {

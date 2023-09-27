@@ -82,8 +82,8 @@ export default function FinancialFreedom(props: FinancialFreedomType) {
         />
       ) : (
         <Image
-          width={226}
-          height={185}
+          width={500}
+          height={411}
           alt={financialFreedomImage.altText}
           src={financialFreedomImage.localFile}
         />

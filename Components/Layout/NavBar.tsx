@@ -100,10 +100,10 @@ export default function Navbar() {
               </button>
               {isAboutDropdownVisible && (
                 <div className='navbar__nav-dropdown-menu'>
-                  <Link href='/how-we-protect-you' className='navbar__nav-link' onClick={closeMenu}>
+                  <Link href='/how_we_protect_you' className='navbar__nav-link' onClick={closeMenu}>
                     How we protect you
                   </Link>
-                  <Link href='/board-of-trustees' className='navbar__nav-link' onClick={closeMenu}>
+                  <Link href='/board_of_trustees' className='navbar__nav-link' onClick={closeMenu}>
                     Board of Trustees
                   </Link>
                   <Link href='/careers' className='navbar__nav-link' onClick={closeMenu}>

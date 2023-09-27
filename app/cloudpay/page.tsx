@@ -1,9 +1,14 @@
 import Image from 'next/image';
+import { Metadata } from 'next';
 
 import Payments from '@/Components/Payments';
 import Superfasts from '@/Components/Superfasts';
 import FinancialFreedom from '@/Components/Container/Home/FinancialFreedom';
 import { financialFreedom } from '@/config/constants';
+
+export const metadata: Metadata = {
+  title: 'CloudPay',
+};
 
 export default function CloudpayPage() {
   return (

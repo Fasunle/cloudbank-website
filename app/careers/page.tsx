@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import CoreValues from '@/Components/Container/Careers/CoreValues';
 import CurrentOpenings from '@/Components/Container/Careers/CurrentOpenings';
 import Introduction from '@/Components/Container/Careers/Introduction';
@@ -6,8 +8,13 @@ import {
   coreValues,
   currentOpeningProps,
   financialFreedom,
-  careerIntroductionProps
+  careerIntroductionProps,
 } from '@/config/constants';
+
+export const metadata: Metadata = {
+  title: 'Careers',
+  description: 'Careers at Cloudbank and MMG',
+};
 
 export default function Careers() {
   return (

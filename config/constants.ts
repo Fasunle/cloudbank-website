@@ -236,9 +236,13 @@ export const testimoniesProps: TestimoniesPropsType = {
 
 export const heroProps: HeroPropsType = {
   companyDetails: '',
+  companyImage: {
+    altText: 'cloudbank office',
+    localFile: '/images/cloudbank_office.png',
+  },
   mastercardImage: {
-    altText: '',
-    localFile: '',
+    altText: 'Master Cards',
+    localFile: '/images/Group 20.svg',
   },
   servicesHeroHeading: '',
   servicesHeroText: '',
@@ -258,8 +262,9 @@ export const saveAndEarnProps: SaveAndEarnPropsType = {
 };
 
 export const productsIntroductionProps: ProductsIntroductionPropsType = {
-  productsIntroductionText: '',
-  productsIntroductionTitle: '',
+  productsIntroductionText:
+    'From bill payments to POS services, Investment plans, Overdrafts, Savings and Business accounts, Cloud bank provides everyone with the right tools to build and manage their finances. From bill payments to POS services, Investment plans, Overdrafts, Savings and Business accounts, Cloud bank provides everyone with the right tools to build and manage their finances.',
+  productsIntroductionTitle: 'Banking the easiest way possible',
 };
 
 export const productsMainProps: ProductsMainPropsType = {
@@ -269,28 +274,29 @@ export const productsMainProps: ProductsMainPropsType = {
     url: '',
   },
   iosPlatformImage: {
-    altText: '',
-    localFile: '',
+    altText: 'dashboard on mobile',
+    localFile: '/images/dashboard-on-mobile.webp',
   },
   iosPlatformIsNotReadyText: '',
-  iosPlatformText: '',
-  iosPlatformTitle: '',
+  iosPlatformText: 'Cloud bank is a cross-platform application and will be available on iOS soon.',
+  iosPlatformTitle: 'iOS platform',
   isIosPlatformAddressLinkReady: false,
   isOverdraftAddressLinkReady: false,
   isPartnersAppAddressLinkReady: false,
   isPosWebAddressReady: false,
   mastercardDate: '',
   mastercardImage: {
-    altText: '',
-    localFile: '',
+    altText: 'master cards',
+    localFile: '/images/master-cards.svg',
   },
   mastercardLink: {
     target: '',
     title: '',
     url: '',
   },
-  mastercardText: '',
-  mastercardTitle: '',
+  mastercardText:
+    'Make seamless payments everywhere you go with Cloud bank Mastercard. Request a card  directly from the mobile or web app',
+  mastercardTitle: 'CloudBank Mastercard',
   overdraftAddressLink: {
     target: '',
     title: '',
@@ -315,12 +321,13 @@ export const productsMainProps: ProductsMainPropsType = {
   partnersAppText: '',
   partnersAppTitle: '',
   posImage: {
-    altText: '',
-    localFile: '',
+    altText: 'pos mock up',
+    localFile: '/images/pos-mock-up.svg',
   },
-  posIsNotReadyText: '',
-  posText: '',
-  posTitle: '',
+  posIsNotReadyText: 'Coming soon',
+  posText:
+    'Cloud bank offers better payment solutions for your business. Earn more when you become a Cloud bank agent',
+  posTitle: 'POS and Agency App',
   posWebAddressLink: {
     target: '',
     title: '',
