@@ -1667,7 +1667,7 @@
     text-align: center;
     padding: 98px 61px;
     height: 450px;
-    background-image: url("/images/man-in-suit.png");
+    background-image: url("//images/man-in-suit.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2256,7 +2256,7 @@
     width: 60vw;
     height: 45vw;
     border-radius: 10px;
-    background-image: url("images/cloudbank_office.png");
+    background-image: url("//images/cloudbank_office.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2280,7 +2280,7 @@
   
   .how-we-protect-you_bottom-hero {
     width: 80vw;
-    background-image: url("images/tiled_bg.png");
+    background-image: url("/images/tiled_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3238,7 +3238,7 @@
     height: 30px;
     left: 480px;
     top: 6px;
-    background-image: url("images/roundtri.png");
+    background-image: url("/images/roundtri.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3382,7 +3382,7 @@
     background-clip: cover;
     background-color: #0f0f0f;
     margin-right: 20px;
-    background-image: url("images/pos.jpg");
+    background-image: url("/images/pos.jpg");
   }
   @media only screen and (max-width: 1024px) {
     .pointofsale__a2 {
@@ -3554,7 +3554,7 @@
   .paymentrecon__wrapper .wrapper1 .right {
     flex: 1;
     height: 450px;
-    background-image: url("images/shop.jpg");
+    background-image: url("/images/shop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3732,7 +3732,7 @@
     flex: 1;
     width: 30%;
     height: 450px;
-    background-image: url("images/posstation.jpg");
+    background-image: url("/images/posstation.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
