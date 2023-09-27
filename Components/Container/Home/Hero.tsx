@@ -16,7 +16,7 @@ export default function HeroSection(props: HeroSectionPropsType) {
   return (
     <section className='hero'>
       <section className='hero__content'>
-        <h1 className='hero__title m-4'>{heroTitle}</h1>
+        <h1 className='hero__title'>{heroTitle}</h1>
         <p className='hero__subtitle'>{heroSubtitle}</p>
         <div className='cta-block flex flex-col md:flex-row items-center md:items-start  gap-2 md:gap-0'>
           <Link
